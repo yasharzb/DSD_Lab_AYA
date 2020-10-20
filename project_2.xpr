@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="C:/Users/AsUS/Dropbox/Semester 5/DSD_Lab/Az1/DSD_Lab_AYA/project_2.xpr">
+<Project Version="7" Minor="40" Path="C:/Users/ASUS/Desktop/DSD_AZ/clone/DSD_Lab_AYA/project_2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="8883cfd74e6a4188af8207b73a332961"/>
@@ -68,6 +68,14 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/testbench.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/1_digit_bcd_mod.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
