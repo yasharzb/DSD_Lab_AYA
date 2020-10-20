@@ -44,37 +44,60 @@
 #endif
 typedef void (*funcp)(char *, char *);
 extern int main(int, char**);
-extern void execute_52(char*, char *);
-extern void execute_53(char*, char *);
-extern void execute_98(char*, char *);
-extern void execute_99(char*, char *);
-extern void execute_100(char*, char *);
-extern void execute_101(char*, char *);
-extern void execute_102(char*, char *);
+extern void execute_364(char*, char *);
+extern void execute_365(char*, char *);
+extern void execute_636(char*, char *);
+extern void execute_637(char*, char *);
+extern void execute_638(char*, char *);
+extern void execute_639(char*, char *);
+extern void execute_640(char*, char *);
+extern void execute_641(char*, char *);
+extern void execute_642(char*, char *);
+extern void execute_643(char*, char *);
+extern void execute_644(char*, char *);
+extern void execute_645(char*, char *);
+extern void execute_646(char*, char *);
+extern void execute_647(char*, char *);
+extern void execute_648(char*, char *);
+extern void execute_649(char*, char *);
+extern void execute_650(char*, char *);
+extern void execute_651(char*, char *);
+extern void execute_652(char*, char *);
 extern void vlog_simple_process_execute_0_fast_no_reg_no_agg(char*, char*, char*);
-extern void execute_62(char*, char *);
-extern void execute_63(char*, char *);
-extern void execute_68(char*, char *);
-extern void execute_69(char*, char *);
+extern void execute_386(char*, char *);
+extern void execute_391(char*, char *);
+extern void execute_392(char*, char *);
 extern void vlog_const_rhs_process_execute_0_fast_no_reg_no_agg(char*, char*, char*);
-extern void execute_70(char*, char *);
-extern void execute_74(char*, char *);
-extern void execute_76(char*, char *);
-extern void execute_55(char*, char *);
-extern void execute_56(char*, char *);
-extern void execute_57(char*, char *);
-extern void execute_103(char*, char *);
-extern void execute_104(char*, char *);
-extern void execute_105(char*, char *);
-extern void execute_106(char*, char *);
-extern void execute_107(char*, char *);
+extern void execute_393(char*, char *);
+extern void execute_397(char*, char *);
+extern void execute_399(char*, char *);
+extern void execute_425(char*, char *);
+extern void execute_426(char*, char *);
+extern void execute_459(char*, char *);
+extern void execute_460(char*, char *);
+extern void execute_493(char*, char *);
+extern void execute_494(char*, char *);
+extern void execute_527(char*, char *);
+extern void execute_528(char*, char *);
+extern void execute_563(char*, char *);
+extern void execute_564(char*, char *);
+extern void execute_599(char*, char *);
+extern void execute_600(char*, char *);
+extern void execute_367(char*, char *);
+extern void execute_368(char*, char *);
+extern void execute_369(char*, char *);
+extern void execute_653(char*, char *);
+extern void execute_654(char*, char *);
+extern void execute_655(char*, char *);
+extern void execute_656(char*, char *);
+extern void execute_657(char*, char *);
 extern void vlog_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-funcp funcTab[25] = {(funcp)execute_52, (funcp)execute_53, (funcp)execute_98, (funcp)execute_99, (funcp)execute_100, (funcp)execute_101, (funcp)execute_102, (funcp)vlog_simple_process_execute_0_fast_no_reg_no_agg, (funcp)execute_62, (funcp)execute_63, (funcp)execute_68, (funcp)execute_69, (funcp)vlog_const_rhs_process_execute_0_fast_no_reg_no_agg, (funcp)execute_70, (funcp)execute_74, (funcp)execute_76, (funcp)execute_55, (funcp)execute_56, (funcp)execute_57, (funcp)execute_103, (funcp)execute_104, (funcp)execute_105, (funcp)execute_106, (funcp)execute_107, (funcp)vlog_transfunc_eventcallback};
-const int NumRelocateId= 25;
+funcp funcTab[48] = {(funcp)execute_364, (funcp)execute_365, (funcp)execute_636, (funcp)execute_637, (funcp)execute_638, (funcp)execute_639, (funcp)execute_640, (funcp)execute_641, (funcp)execute_642, (funcp)execute_643, (funcp)execute_644, (funcp)execute_645, (funcp)execute_646, (funcp)execute_647, (funcp)execute_648, (funcp)execute_649, (funcp)execute_650, (funcp)execute_651, (funcp)execute_652, (funcp)vlog_simple_process_execute_0_fast_no_reg_no_agg, (funcp)execute_386, (funcp)execute_391, (funcp)execute_392, (funcp)vlog_const_rhs_process_execute_0_fast_no_reg_no_agg, (funcp)execute_393, (funcp)execute_397, (funcp)execute_399, (funcp)execute_425, (funcp)execute_426, (funcp)execute_459, (funcp)execute_460, (funcp)execute_493, (funcp)execute_494, (funcp)execute_527, (funcp)execute_528, (funcp)execute_563, (funcp)execute_564, (funcp)execute_599, (funcp)execute_600, (funcp)execute_367, (funcp)execute_368, (funcp)execute_369, (funcp)execute_653, (funcp)execute_654, (funcp)execute_655, (funcp)execute_656, (funcp)execute_657, (funcp)vlog_transfunc_eventcallback};
+const int NumRelocateId= 48;
 
 void relocate(char *dp)
 {
-	iki_relocate(dp, "xsim.dir/testbench_behav/xsim.reloc",  (void **)funcTab, 25);
+	iki_relocate(dp, "xsim.dir/testbench_behav/xsim.reloc",  (void **)funcTab, 48);
 
 	/*Populate the transaction function pointer field in the whole net structure */
 }
@@ -84,10 +107,19 @@ void sensitize(char *dp)
 	iki_sensitize(dp, "xsim.dir/testbench_behav/xsim.reloc");
 }
 
+	// Initialize Verilog nets in mixed simulation, for the cases when the value at time 0 should be propagated from the mixed language Vhdl net
+
+void wrapper_func_0(char *dp)
+
+{
+
+}
+
 void simulate(char *dp)
 {
 		iki_schedule_processes_at_time_zero(dp, "xsim.dir/testbench_behav/xsim.reloc");
-	// Initialize Verilog nets in mixed simulation, for the cases when the value at time 0 should be propagated from the mixed language Vhdl net
+	wrapper_func_0(dp);
+
 	iki_execute_processes();
 
 	// Schedule resolution functions for the multiply driven Verilog nets that have strength

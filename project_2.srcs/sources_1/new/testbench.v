@@ -21,43 +21,42 @@
 
 
 module testbench();
-    reg a0;
-    reg a1;
-    reg a2;
-    reg a3;
-    wire mod_0;
-    wire mod_1;
+    reg a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15;
+    wire is_mod_3;
+    
     BCD_modulo_3 BCD_modulo_3_i
-        (.A0(a0),
-        .A1(a1),
-        .A2(a2),
-        .A3(a3),
-        .mod_0(mod_0),
-        .mod_1(mod_1)
+        (.A0(a0), .A1(a1),.A2(a2),.A3(a3),
+        .A4(a4), .A5(a5),.A6(a6),.A7(a7),
+        .A8(a8), .A9(a9),.A10(a10),.A11(a11),
+        .A12(a12), .A13(a13),.A14(a14),.A15(a15),
+        .is_mul_of_3(is_mod_3)
         );
         
-    initial $monitor($time, "(mode_1, mode_0) = (%d, %d)", mod_1, mod_0);
+    initial $monitor($time, ", %d", is_mod_3);
     
     initial
     begin
-        a0 = 0;
-        a1 = 0;
-        a2  =0;
-        a3 = 1;
-        
+        a0 = 0; a1 = 0; a2  =0; a3 = 0;
+        a4 = 0; a5 = 0; a6  =0; a7 = 0;
+        a8 = 0; a9 = 0; a10 =0; a11 = 0;
+        a12 = 0; a13 = 0; a14  =0; a15 = 0;
         #10
         
-        a0 = 1;
+        a0 = 1;  //1387
         a1 = 1;
-        a2  =0;
-        a3 = 0;
-        
+        a2  =1;
+        a7 = 1;
+        a8 = 1;
+        a9 = 1;
+        a12 = 1;
         #10
         // hi 
-        a0 = 0;
-        a1 = 0;
-        a2  =1;
-        a3 = 0;
+        a4 = 1; //6357
+        a6 = 1;
+        a7  =0;
+        a12 = 0;
+        a13 = 1;
+        a14 = 1;
         #10;
         end
     

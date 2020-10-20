@@ -1,11 +1,12 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x41B9508E41B9508E",
+      "boundary_crc": "0x3146E2B23146E2B2",
       "device": "xc7a35tcpg236-1",
       "name": "BCD_modulo_3",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.1"
+      "tool_version": "2019.1",
+      "validated": "true"
     },
     "design_tree": {
       "ONE_BCD_DIGIT_MOD": {
@@ -250,7 +251,9 @@
         "direction": "I"
       },
       "is_mul_of_3": {
-        "direction": "O"
+        "direction": "O",
+        "left": "0",
+        "right": "0"
       }
     },
     "components": {

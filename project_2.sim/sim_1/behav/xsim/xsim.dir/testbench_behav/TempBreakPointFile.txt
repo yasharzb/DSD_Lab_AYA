@@ -1,2 +1,1 @@
 Breakpoint File Version 1.0
-57 true C:/Users/ASUS/Desktop/DSD_AZ/clone/DSD_Lab_AYA/project_2.srcs/sources_1/new/testbench.v
