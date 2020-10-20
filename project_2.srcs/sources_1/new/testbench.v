@@ -34,7 +34,7 @@ module testbench();
     begin
         a = 1;
         b = 1;
-        
+        // hi 
         $monitor($time, "(in, reset, out) = (%d, %d, %d)", a, b, out);
     end
     
