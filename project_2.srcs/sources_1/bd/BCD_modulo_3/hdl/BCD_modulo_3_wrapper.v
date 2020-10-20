@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Tue Oct 20 14:30:22 2020
+//Date        : Tue Oct 20 18:58:43 2020
 //Host        : DESKTOP-4NPEG9F running 64-bit major release  (build 9200)
 //Command     : generate_target BCD_modulo_3_wrapper.bd
 //Design      : BCD_modulo_3_wrapper

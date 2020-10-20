@@ -121,13 +121,13 @@ if { $nRet != 0 } {
 ##################################################################
 
 
-# Hierarchical cell: add_mode_5
-proc create_hier_cell_add_mode_5 { parentCell nameHier } {
+# Hierarchical cell: mode_3_of_sum_2
+proc create_hier_cell_mode_3_of_sum_2 { parentCell nameHier } {
 
   variable script_folder
 
   if { $parentCell eq "" || $nameHier eq "" } {
-     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_add_mode_5() - Empty argument(s)!"}
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_mode_3_of_sum_2() - Empty argument(s)!"}
      return
   }
 
@@ -373,13 +373,13 @@ proc create_hier_cell_add_mode_5 { parentCell nameHier } {
   current_bd_instance $oldCurInst
 }
 
-# Hierarchical cell: add_mode_4
-proc create_hier_cell_add_mode_4 { parentCell nameHier } {
+# Hierarchical cell: mode_3_of_sum_1
+proc create_hier_cell_mode_3_of_sum_1 { parentCell nameHier } {
 
   variable script_folder
 
   if { $parentCell eq "" || $nameHier eq "" } {
-     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_add_mode_4() - Empty argument(s)!"}
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_mode_3_of_sum_1() - Empty argument(s)!"}
      return
   }
 
@@ -625,13 +625,13 @@ proc create_hier_cell_add_mode_4 { parentCell nameHier } {
   current_bd_instance $oldCurInst
 }
 
-# Hierarchical cell: add_mode_3
-proc create_hier_cell_add_mode_3 { parentCell nameHier } {
+# Hierarchical cell: mode_3_of_sum_0
+proc create_hier_cell_mode_3_of_sum_0 { parentCell nameHier } {
 
   variable script_folder
 
   if { $parentCell eq "" || $nameHier eq "" } {
-     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_add_mode_3() - Empty argument(s)!"}
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_mode_3_of_sum_0() - Empty argument(s)!"}
      return
   }
 
@@ -877,13 +877,13 @@ proc create_hier_cell_add_mode_3 { parentCell nameHier } {
   current_bd_instance $oldCurInst
 }
 
-# Hierarchical cell: ONE_BCD_DIGIT_MOD3
-proc create_hier_cell_ONE_BCD_DIGIT_MOD3 { parentCell nameHier } {
+# Hierarchical cell: mode_3_for_one_digit_3
+proc create_hier_cell_mode_3_for_one_digit_3 { parentCell nameHier } {
 
   variable script_folder
 
   if { $parentCell eq "" || $nameHier eq "" } {
-     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_ONE_BCD_DIGIT_MOD3() - Empty argument(s)!"}
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_mode_3_for_one_digit_3() - Empty argument(s)!"}
      return
   }
 
@@ -1115,13 +1115,13 @@ proc create_hier_cell_ONE_BCD_DIGIT_MOD3 { parentCell nameHier } {
   current_bd_instance $oldCurInst
 }
 
-# Hierarchical cell: ONE_BCD_DIGIT_MOD2
-proc create_hier_cell_ONE_BCD_DIGIT_MOD2 { parentCell nameHier } {
+# Hierarchical cell: mode_3_for_one_digit_2
+proc create_hier_cell_mode_3_for_one_digit_2 { parentCell nameHier } {
 
   variable script_folder
 
   if { $parentCell eq "" || $nameHier eq "" } {
-     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_ONE_BCD_DIGIT_MOD2() - Empty argument(s)!"}
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_mode_3_for_one_digit_2() - Empty argument(s)!"}
      return
   }
 
@@ -1353,13 +1353,13 @@ proc create_hier_cell_ONE_BCD_DIGIT_MOD2 { parentCell nameHier } {
   current_bd_instance $oldCurInst
 }
 
-# Hierarchical cell: ONE_BCD_DIGIT_MOD1
-proc create_hier_cell_ONE_BCD_DIGIT_MOD1 { parentCell nameHier } {
+# Hierarchical cell: mode_3_for_one_digit_1
+proc create_hier_cell_mode_3_for_one_digit_1 { parentCell nameHier } {
 
   variable script_folder
 
   if { $parentCell eq "" || $nameHier eq "" } {
-     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_ONE_BCD_DIGIT_MOD1() - Empty argument(s)!"}
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_mode_3_for_one_digit_1() - Empty argument(s)!"}
      return
   }
 
@@ -1591,13 +1591,13 @@ proc create_hier_cell_ONE_BCD_DIGIT_MOD1 { parentCell nameHier } {
   current_bd_instance $oldCurInst
 }
 
-# Hierarchical cell: ONE_BCD_DIGIT_MOD
-proc create_hier_cell_ONE_BCD_DIGIT_MOD { parentCell nameHier } {
+# Hierarchical cell: Mode_3_for_one_digit_0
+proc create_hier_cell_Mode_3_for_one_digit_0 { parentCell nameHier } {
 
   variable script_folder
 
   if { $parentCell eq "" || $nameHier eq "" } {
-     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_ONE_BCD_DIGIT_MOD() - Empty argument(s)!"}
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_Mode_3_for_one_digit_0() - Empty argument(s)!"}
      return
   }
 
@@ -1883,85 +1883,85 @@ proc create_root_design { parentCell } {
   set A15 [ create_bd_port -dir I A15 ]
   set is_mul_of_3 [ create_bd_port -dir O -from 0 -to 0 is_mul_of_3 ]
 
-  # Create instance: ONE_BCD_DIGIT_MOD
-  create_hier_cell_ONE_BCD_DIGIT_MOD [current_bd_instance .] ONE_BCD_DIGIT_MOD
+  # Create instance: Mode_3_for_one_digit_0
+  create_hier_cell_Mode_3_for_one_digit_0 [current_bd_instance .] Mode_3_for_one_digit_0
 
-  # Create instance: ONE_BCD_DIGIT_MOD1
-  create_hier_cell_ONE_BCD_DIGIT_MOD1 [current_bd_instance .] ONE_BCD_DIGIT_MOD1
-
-  # Create instance: ONE_BCD_DIGIT_MOD2
-  create_hier_cell_ONE_BCD_DIGIT_MOD2 [current_bd_instance .] ONE_BCD_DIGIT_MOD2
-
-  # Create instance: ONE_BCD_DIGIT_MOD3
-  create_hier_cell_ONE_BCD_DIGIT_MOD3 [current_bd_instance .] ONE_BCD_DIGIT_MOD3
-
-  # Create instance: add_mode_3
-  create_hier_cell_add_mode_3 [current_bd_instance .] add_mode_3
-
-  # Create instance: add_mode_4
-  create_hier_cell_add_mode_4 [current_bd_instance .] add_mode_4
-
-  # Create instance: add_mode_5
-  create_hier_cell_add_mode_5 [current_bd_instance .] add_mode_5
-
-  # Create instance: util_vector_logic_0, and set properties
-  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
-  set_property -dict [ list \
-   CONFIG.C_OPERATION {not} \
-   CONFIG.C_SIZE {1} \
-   CONFIG.LOGO_FILE {data/sym_notgate.png} \
- ] $util_vector_logic_0
-
-  # Create instance: util_vector_logic_1, and set properties
-  set util_vector_logic_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_1 ]
-  set_property -dict [ list \
-   CONFIG.C_OPERATION {not} \
-   CONFIG.C_SIZE {1} \
-   CONFIG.LOGO_FILE {data/sym_notgate.png} \
- ] $util_vector_logic_1
-
-  # Create instance: util_vector_logic_2, and set properties
-  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  # Create instance: final_check, and set properties
+  set final_check [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 final_check ]
   set_property -dict [ list \
    CONFIG.C_OPERATION {and} \
    CONFIG.C_SIZE {1} \
    CONFIG.LOGO_FILE {data/sym_andgate.png} \
- ] $util_vector_logic_2
+ ] $final_check
+
+  # Create instance: mode_3_for_one_digit_1
+  create_hier_cell_mode_3_for_one_digit_1 [current_bd_instance .] mode_3_for_one_digit_1
+
+  # Create instance: mode_3_for_one_digit_2
+  create_hier_cell_mode_3_for_one_digit_2 [current_bd_instance .] mode_3_for_one_digit_2
+
+  # Create instance: mode_3_for_one_digit_3
+  create_hier_cell_mode_3_for_one_digit_3 [current_bd_instance .] mode_3_for_one_digit_3
+
+  # Create instance: mode_3_of_sum_0
+  create_hier_cell_mode_3_of_sum_0 [current_bd_instance .] mode_3_of_sum_0
+
+  # Create instance: mode_3_of_sum_1
+  create_hier_cell_mode_3_of_sum_1 [current_bd_instance .] mode_3_of_sum_1
+
+  # Create instance: mode_3_of_sum_2
+  create_hier_cell_mode_3_of_sum_2 [current_bd_instance .] mode_3_of_sum_2
+
+  # Create instance: not_0, and set properties
+  set not_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 not_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $not_0
+
+  # Create instance: not_1, and set properties
+  set not_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 not_1 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $not_1
 
   # Create port connections
-  connect_bd_net -net A0_1 [get_bd_ports A0] [get_bd_pins ONE_BCD_DIGIT_MOD/A0]
-  connect_bd_net -net A0_2 [get_bd_ports A8] [get_bd_pins ONE_BCD_DIGIT_MOD2/A0]
-  connect_bd_net -net A1_1 [get_bd_ports A1] [get_bd_pins ONE_BCD_DIGIT_MOD/A1]
-  connect_bd_net -net A1_2 [get_bd_ports A9] [get_bd_pins ONE_BCD_DIGIT_MOD2/A1]
-  connect_bd_net -net A2_1 [get_bd_ports A2] [get_bd_pins ONE_BCD_DIGIT_MOD/A2]
-  connect_bd_net -net A2_2 [get_bd_ports A10] [get_bd_pins ONE_BCD_DIGIT_MOD2/A2]
-  connect_bd_net -net A3_1 [get_bd_ports A3] [get_bd_pins ONE_BCD_DIGIT_MOD/A3]
-  connect_bd_net -net A3_2 [get_bd_ports A11] [get_bd_pins ONE_BCD_DIGIT_MOD2/A3]
-  connect_bd_net -net A4_1 [get_bd_ports A4] [get_bd_pins ONE_BCD_DIGIT_MOD1/A0]
-  connect_bd_net -net A4_2 [get_bd_ports A12] [get_bd_pins ONE_BCD_DIGIT_MOD3/A0]
-  connect_bd_net -net A5_1 [get_bd_ports A5] [get_bd_pins ONE_BCD_DIGIT_MOD1/A1]
-  connect_bd_net -net A5_2 [get_bd_ports A13] [get_bd_pins ONE_BCD_DIGIT_MOD3/A1]
-  connect_bd_net -net A6_1 [get_bd_ports A6] [get_bd_pins ONE_BCD_DIGIT_MOD1/A2]
-  connect_bd_net -net A6_2 [get_bd_ports A14] [get_bd_pins ONE_BCD_DIGIT_MOD3/A2]
-  connect_bd_net -net A7_1 [get_bd_ports A7] [get_bd_pins ONE_BCD_DIGIT_MOD1/A3]
-  connect_bd_net -net A7_2 [get_bd_ports A15] [get_bd_pins ONE_BCD_DIGIT_MOD3/A3]
-  connect_bd_net -net ONE_BCD_DIGIT_MOD1_MOD_0 [get_bd_pins ONE_BCD_DIGIT_MOD1/MOD_0] [get_bd_pins add_mode_3/B0]
-  connect_bd_net -net ONE_BCD_DIGIT_MOD1_MOD_1 [get_bd_pins ONE_BCD_DIGIT_MOD1/MOD_1] [get_bd_pins add_mode_3/B1]
-  connect_bd_net -net ONE_BCD_DIGIT_MOD1_MOD_2 [get_bd_pins ONE_BCD_DIGIT_MOD3/MOD_0] [get_bd_pins add_mode_4/B0]
-  connect_bd_net -net ONE_BCD_DIGIT_MOD1_MOD_3 [get_bd_pins ONE_BCD_DIGIT_MOD3/MOD_1] [get_bd_pins add_mode_4/B1]
-  connect_bd_net -net ONE_BCD_DIGIT_MOD_MOD_0 [get_bd_pins ONE_BCD_DIGIT_MOD/MOD_0] [get_bd_pins add_mode_3/A0]
-  connect_bd_net -net ONE_BCD_DIGIT_MOD_MOD_1 [get_bd_pins ONE_BCD_DIGIT_MOD/MOD_1] [get_bd_pins add_mode_3/A1]
-  connect_bd_net -net ONE_BCD_DIGIT_MOD_MOD_2 [get_bd_pins ONE_BCD_DIGIT_MOD2/MOD_0] [get_bd_pins add_mode_4/A0]
-  connect_bd_net -net ONE_BCD_DIGIT_MOD_MOD_3 [get_bd_pins ONE_BCD_DIGIT_MOD2/MOD_1] [get_bd_pins add_mode_4/A1]
-  connect_bd_net -net add_mode_3_mod_0 [get_bd_pins add_mode_3/mod_0] [get_bd_pins add_mode_5/A0]
-  connect_bd_net -net add_mode_3_mod_1 [get_bd_pins add_mode_3/mod_1] [get_bd_pins add_mode_5/A1]
-  connect_bd_net -net add_mode_4_mod_0 [get_bd_pins add_mode_4/mod_0] [get_bd_pins add_mode_5/B0]
-  connect_bd_net -net add_mode_4_mod_1 [get_bd_pins add_mode_4/mod_1] [get_bd_pins add_mode_5/B1]
-  connect_bd_net -net add_mode_5_mod_0 [get_bd_pins add_mode_5/mod_0] [get_bd_pins util_vector_logic_1/Op1]
-  connect_bd_net -net add_mode_5_mod_1 [get_bd_pins add_mode_5/mod_1] [get_bd_pins util_vector_logic_0/Op1]
-  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
-  connect_bd_net -net util_vector_logic_1_Res [get_bd_pins util_vector_logic_1/Res] [get_bd_pins util_vector_logic_2/Op2]
-  connect_bd_net -net util_vector_logic_2_Res [get_bd_ports is_mul_of_3] [get_bd_pins util_vector_logic_2/Res]
+  connect_bd_net -net A0_1 [get_bd_ports A0] [get_bd_pins Mode_3_for_one_digit_0/A0]
+  connect_bd_net -net A0_2 [get_bd_ports A8] [get_bd_pins mode_3_for_one_digit_2/A0]
+  connect_bd_net -net A1_1 [get_bd_ports A1] [get_bd_pins Mode_3_for_one_digit_0/A1]
+  connect_bd_net -net A1_2 [get_bd_ports A9] [get_bd_pins mode_3_for_one_digit_2/A1]
+  connect_bd_net -net A2_1 [get_bd_ports A2] [get_bd_pins Mode_3_for_one_digit_0/A2]
+  connect_bd_net -net A2_2 [get_bd_ports A10] [get_bd_pins mode_3_for_one_digit_2/A2]
+  connect_bd_net -net A3_1 [get_bd_ports A3] [get_bd_pins Mode_3_for_one_digit_0/A3]
+  connect_bd_net -net A3_2 [get_bd_ports A11] [get_bd_pins mode_3_for_one_digit_2/A3]
+  connect_bd_net -net A4_1 [get_bd_ports A4] [get_bd_pins mode_3_for_one_digit_1/A0]
+  connect_bd_net -net A4_2 [get_bd_ports A12] [get_bd_pins mode_3_for_one_digit_3/A0]
+  connect_bd_net -net A5_1 [get_bd_ports A5] [get_bd_pins mode_3_for_one_digit_1/A1]
+  connect_bd_net -net A5_2 [get_bd_ports A13] [get_bd_pins mode_3_for_one_digit_3/A1]
+  connect_bd_net -net A6_1 [get_bd_ports A6] [get_bd_pins mode_3_for_one_digit_1/A2]
+  connect_bd_net -net A6_2 [get_bd_ports A14] [get_bd_pins mode_3_for_one_digit_3/A2]
+  connect_bd_net -net A7_1 [get_bd_ports A7] [get_bd_pins mode_3_for_one_digit_1/A3]
+  connect_bd_net -net A7_2 [get_bd_ports A15] [get_bd_pins mode_3_for_one_digit_3/A3]
+  connect_bd_net -net ONE_BCD_DIGIT_MOD1_MOD_0 [get_bd_pins mode_3_for_one_digit_1/MOD_0] [get_bd_pins mode_3_of_sum_0/B0]
+  connect_bd_net -net ONE_BCD_DIGIT_MOD1_MOD_1 [get_bd_pins mode_3_for_one_digit_1/MOD_1] [get_bd_pins mode_3_of_sum_0/B1]
+  connect_bd_net -net ONE_BCD_DIGIT_MOD1_MOD_2 [get_bd_pins mode_3_for_one_digit_3/MOD_0] [get_bd_pins mode_3_of_sum_1/B0]
+  connect_bd_net -net ONE_BCD_DIGIT_MOD1_MOD_3 [get_bd_pins mode_3_for_one_digit_3/MOD_1] [get_bd_pins mode_3_of_sum_1/B1]
+  connect_bd_net -net ONE_BCD_DIGIT_MOD_MOD_0 [get_bd_pins Mode_3_for_one_digit_0/MOD_0] [get_bd_pins mode_3_of_sum_0/A0]
+  connect_bd_net -net ONE_BCD_DIGIT_MOD_MOD_1 [get_bd_pins Mode_3_for_one_digit_0/MOD_1] [get_bd_pins mode_3_of_sum_0/A1]
+  connect_bd_net -net ONE_BCD_DIGIT_MOD_MOD_2 [get_bd_pins mode_3_for_one_digit_2/MOD_0] [get_bd_pins mode_3_of_sum_1/A0]
+  connect_bd_net -net ONE_BCD_DIGIT_MOD_MOD_3 [get_bd_pins mode_3_for_one_digit_2/MOD_1] [get_bd_pins mode_3_of_sum_1/A1]
+  connect_bd_net -net add_mode_3_mod_0 [get_bd_pins mode_3_of_sum_0/mod_0] [get_bd_pins mode_3_of_sum_2/A0]
+  connect_bd_net -net add_mode_3_mod_1 [get_bd_pins mode_3_of_sum_0/mod_1] [get_bd_pins mode_3_of_sum_2/A1]
+  connect_bd_net -net add_mode_4_mod_0 [get_bd_pins mode_3_of_sum_1/mod_0] [get_bd_pins mode_3_of_sum_2/B0]
+  connect_bd_net -net add_mode_4_mod_1 [get_bd_pins mode_3_of_sum_1/mod_1] [get_bd_pins mode_3_of_sum_2/B1]
+  connect_bd_net -net add_mode_5_mod_0 [get_bd_pins mode_3_of_sum_2/mod_0] [get_bd_pins not_1/Op1]
+  connect_bd_net -net add_mode_5_mod_1 [get_bd_pins mode_3_of_sum_2/mod_1] [get_bd_pins not_0/Op1]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins final_check/Op1] [get_bd_pins not_0/Res]
+  connect_bd_net -net util_vector_logic_1_Res [get_bd_pins final_check/Op2] [get_bd_pins not_1/Res]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_ports is_mul_of_3] [get_bd_pins final_check/Res]
 
   # Create address segments
 

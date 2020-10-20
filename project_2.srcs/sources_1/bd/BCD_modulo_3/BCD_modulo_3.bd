@@ -9,7 +9,7 @@
       "validated": "true"
     },
     "design_tree": {
-      "ONE_BCD_DIGIT_MOD": {
+      "Mode_3_for_one_digit_0": {
         "util_vector_logic_0": "",
         "util_vector_logic_1": "",
         "util_vector_logic_2": "",
@@ -35,7 +35,7 @@
         "util_vector_logic_22": "",
         "util_vector_logic_23": ""
       },
-      "ONE_BCD_DIGIT_MOD1": {
+      "mode_3_for_one_digit_1": {
         "util_vector_logic_0": "",
         "util_vector_logic_1": "",
         "util_vector_logic_2": "",
@@ -61,7 +61,7 @@
         "util_vector_logic_22": "",
         "util_vector_logic_23": ""
       },
-      "add_mode_3": {
+      "mode_3_of_sum_0": {
         "util_vector_logic_0": "",
         "util_vector_logic_1": "",
         "util_vector_logic_2": "",
@@ -89,7 +89,7 @@
         "util_vector_logic_24": "",
         "util_vector_logic_25": ""
       },
-      "ONE_BCD_DIGIT_MOD2": {
+      "mode_3_for_one_digit_2": {
         "util_vector_logic_0": "",
         "util_vector_logic_1": "",
         "util_vector_logic_2": "",
@@ -115,7 +115,7 @@
         "util_vector_logic_22": "",
         "util_vector_logic_23": ""
       },
-      "ONE_BCD_DIGIT_MOD3": {
+      "mode_3_for_one_digit_3": {
         "util_vector_logic_0": "",
         "util_vector_logic_1": "",
         "util_vector_logic_2": "",
@@ -141,7 +141,7 @@
         "util_vector_logic_22": "",
         "util_vector_logic_23": ""
       },
-      "add_mode_4": {
+      "mode_3_of_sum_1": {
         "util_vector_logic_0": "",
         "util_vector_logic_1": "",
         "util_vector_logic_2": "",
@@ -169,7 +169,7 @@
         "util_vector_logic_24": "",
         "util_vector_logic_25": ""
       },
-      "add_mode_5": {
+      "mode_3_of_sum_2": {
         "util_vector_logic_0": "",
         "util_vector_logic_1": "",
         "util_vector_logic_2": "",
@@ -197,9 +197,9 @@
         "util_vector_logic_24": "",
         "util_vector_logic_25": ""
       },
-      "util_vector_logic_0": "",
-      "util_vector_logic_1": "",
-      "util_vector_logic_2": ""
+      "not_0": "",
+      "not_1": "",
+      "final_check": ""
     },
     "ports": {
       "A0": {
@@ -257,7 +257,7 @@
       }
     },
     "components": {
-      "ONE_BCD_DIGIT_MOD": {
+      "Mode_3_for_one_digit_0": {
         "ports": {
           "A0": {
             "direction": "I"
@@ -713,7 +713,7 @@
           }
         }
       },
-      "ONE_BCD_DIGIT_MOD1": {
+      "mode_3_for_one_digit_1": {
         "ports": {
           "A0": {
             "direction": "I"
@@ -1169,7 +1169,7 @@
           }
         }
       },
-      "add_mode_3": {
+      "mode_3_of_sum_0": {
         "ports": {
           "A0": {
             "direction": "I"
@@ -1657,7 +1657,7 @@
           }
         }
       },
-      "ONE_BCD_DIGIT_MOD2": {
+      "mode_3_for_one_digit_2": {
         "ports": {
           "A0": {
             "direction": "I"
@@ -2113,7 +2113,7 @@
           }
         }
       },
-      "ONE_BCD_DIGIT_MOD3": {
+      "mode_3_for_one_digit_3": {
         "ports": {
           "A0": {
             "direction": "I"
@@ -2569,7 +2569,7 @@
           }
         }
       },
-      "add_mode_4": {
+      "mode_3_of_sum_1": {
         "ports": {
           "A0": {
             "direction": "I"
@@ -3057,7 +3057,7 @@
           }
         }
       },
-      "add_mode_5": {
+      "mode_3_of_sum_2": {
         "ports": {
           "A0": {
             "direction": "I"
@@ -3545,7 +3545,7 @@
           }
         }
       },
-      "util_vector_logic_0": {
+      "not_0": {
         "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
         "xci_name": "BCD_modulo_3_util_vector_logic_0_15",
         "parameters": {
@@ -3557,7 +3557,7 @@
           }
         }
       },
-      "util_vector_logic_1": {
+      "not_1": {
         "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
         "xci_name": "BCD_modulo_3_util_vector_logic_0_16",
         "parameters": {
@@ -3569,7 +3569,7 @@
           }
         }
       },
-      "util_vector_logic_2": {
+      "final_check": {
         "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
         "xci_name": "BCD_modulo_3_util_vector_logic_0_17",
         "parameters": {
@@ -3586,198 +3586,198 @@
       "A0_1": {
         "ports": [
           "A0",
-          "ONE_BCD_DIGIT_MOD/A0"
+          "Mode_3_for_one_digit_0/A0"
         ]
       },
       "A1_1": {
         "ports": [
           "A1",
-          "ONE_BCD_DIGIT_MOD/A1"
+          "Mode_3_for_one_digit_0/A1"
         ]
       },
       "A2_1": {
         "ports": [
           "A2",
-          "ONE_BCD_DIGIT_MOD/A2"
+          "Mode_3_for_one_digit_0/A2"
         ]
       },
       "A3_1": {
         "ports": [
           "A3",
-          "ONE_BCD_DIGIT_MOD/A3"
+          "Mode_3_for_one_digit_0/A3"
         ]
       },
       "ONE_BCD_DIGIT_MOD_MOD_1": {
         "ports": [
-          "ONE_BCD_DIGIT_MOD/MOD_1",
-          "add_mode_3/A1"
+          "Mode_3_for_one_digit_0/MOD_1",
+          "mode_3_of_sum_0/A1"
         ]
       },
       "ONE_BCD_DIGIT_MOD_MOD_0": {
         "ports": [
-          "ONE_BCD_DIGIT_MOD/MOD_0",
-          "add_mode_3/A0"
+          "Mode_3_for_one_digit_0/MOD_0",
+          "mode_3_of_sum_0/A0"
         ]
       },
       "ONE_BCD_DIGIT_MOD1_MOD_0": {
         "ports": [
-          "ONE_BCD_DIGIT_MOD1/MOD_0",
-          "add_mode_3/B0"
+          "mode_3_for_one_digit_1/MOD_0",
+          "mode_3_of_sum_0/B0"
         ]
       },
       "ONE_BCD_DIGIT_MOD1_MOD_1": {
         "ports": [
-          "ONE_BCD_DIGIT_MOD1/MOD_1",
-          "add_mode_3/B1"
+          "mode_3_for_one_digit_1/MOD_1",
+          "mode_3_of_sum_0/B1"
         ]
       },
       "A4_1": {
         "ports": [
           "A4",
-          "ONE_BCD_DIGIT_MOD1/A0"
+          "mode_3_for_one_digit_1/A0"
         ]
       },
       "A5_1": {
         "ports": [
           "A5",
-          "ONE_BCD_DIGIT_MOD1/A1"
+          "mode_3_for_one_digit_1/A1"
         ]
       },
       "A6_1": {
         "ports": [
           "A6",
-          "ONE_BCD_DIGIT_MOD1/A2"
+          "mode_3_for_one_digit_1/A2"
         ]
       },
       "A7_1": {
         "ports": [
           "A7",
-          "ONE_BCD_DIGIT_MOD1/A3"
+          "mode_3_for_one_digit_1/A3"
         ]
       },
       "A0_2": {
         "ports": [
           "A8",
-          "ONE_BCD_DIGIT_MOD2/A0"
+          "mode_3_for_one_digit_2/A0"
         ]
       },
       "A1_2": {
         "ports": [
           "A9",
-          "ONE_BCD_DIGIT_MOD2/A1"
+          "mode_3_for_one_digit_2/A1"
         ]
       },
       "A2_2": {
         "ports": [
           "A10",
-          "ONE_BCD_DIGIT_MOD2/A2"
+          "mode_3_for_one_digit_2/A2"
         ]
       },
       "A3_2": {
         "ports": [
           "A11",
-          "ONE_BCD_DIGIT_MOD2/A3"
+          "mode_3_for_one_digit_2/A3"
         ]
       },
       "A4_2": {
         "ports": [
           "A12",
-          "ONE_BCD_DIGIT_MOD3/A0"
+          "mode_3_for_one_digit_3/A0"
         ]
       },
       "A5_2": {
         "ports": [
           "A13",
-          "ONE_BCD_DIGIT_MOD3/A1"
+          "mode_3_for_one_digit_3/A1"
         ]
       },
       "A6_2": {
         "ports": [
           "A14",
-          "ONE_BCD_DIGIT_MOD3/A2"
+          "mode_3_for_one_digit_3/A2"
         ]
       },
       "A7_2": {
         "ports": [
           "A15",
-          "ONE_BCD_DIGIT_MOD3/A3"
+          "mode_3_for_one_digit_3/A3"
         ]
       },
       "ONE_BCD_DIGIT_MOD1_MOD_2": {
         "ports": [
-          "ONE_BCD_DIGIT_MOD3/MOD_0",
-          "add_mode_4/B0"
+          "mode_3_for_one_digit_3/MOD_0",
+          "mode_3_of_sum_1/B0"
         ]
       },
       "ONE_BCD_DIGIT_MOD1_MOD_3": {
         "ports": [
-          "ONE_BCD_DIGIT_MOD3/MOD_1",
-          "add_mode_4/B1"
+          "mode_3_for_one_digit_3/MOD_1",
+          "mode_3_of_sum_1/B1"
         ]
       },
       "ONE_BCD_DIGIT_MOD_MOD_2": {
         "ports": [
-          "ONE_BCD_DIGIT_MOD2/MOD_0",
-          "add_mode_4/A0"
+          "mode_3_for_one_digit_2/MOD_0",
+          "mode_3_of_sum_1/A0"
         ]
       },
       "ONE_BCD_DIGIT_MOD_MOD_3": {
         "ports": [
-          "ONE_BCD_DIGIT_MOD2/MOD_1",
-          "add_mode_4/A1"
+          "mode_3_for_one_digit_2/MOD_1",
+          "mode_3_of_sum_1/A1"
         ]
       },
       "add_mode_3_mod_0": {
         "ports": [
-          "add_mode_3/mod_0",
-          "add_mode_5/A0"
+          "mode_3_of_sum_0/mod_0",
+          "mode_3_of_sum_2/A0"
         ]
       },
       "add_mode_3_mod_1": {
         "ports": [
-          "add_mode_3/mod_1",
-          "add_mode_5/A1"
+          "mode_3_of_sum_0/mod_1",
+          "mode_3_of_sum_2/A1"
         ]
       },
       "add_mode_4_mod_0": {
         "ports": [
-          "add_mode_4/mod_0",
-          "add_mode_5/B0"
+          "mode_3_of_sum_1/mod_0",
+          "mode_3_of_sum_2/B0"
         ]
       },
       "add_mode_4_mod_1": {
         "ports": [
-          "add_mode_4/mod_1",
-          "add_mode_5/B1"
+          "mode_3_of_sum_1/mod_1",
+          "mode_3_of_sum_2/B1"
         ]
       },
       "add_mode_5_mod_1": {
         "ports": [
-          "add_mode_5/mod_1",
-          "util_vector_logic_0/Op1"
+          "mode_3_of_sum_2/mod_1",
+          "not_0/Op1"
         ]
       },
       "add_mode_5_mod_0": {
         "ports": [
-          "add_mode_5/mod_0",
-          "util_vector_logic_1/Op1"
+          "mode_3_of_sum_2/mod_0",
+          "not_1/Op1"
         ]
       },
       "util_vector_logic_0_Res": {
         "ports": [
-          "util_vector_logic_0/Res",
-          "util_vector_logic_2/Op1"
+          "not_0/Res",
+          "final_check/Op1"
         ]
       },
       "util_vector_logic_1_Res": {
         "ports": [
-          "util_vector_logic_1/Res",
-          "util_vector_logic_2/Op2"
+          "not_1/Res",
+          "final_check/Op2"
         ]
       },
       "util_vector_logic_2_Res": {
         "ports": [
-          "util_vector_logic_2/Res",
+          "final_check/Res",
           "is_mul_of_3"
         ]
       }

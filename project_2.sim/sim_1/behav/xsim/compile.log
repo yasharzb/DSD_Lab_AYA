@@ -1,12 +1,12 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/DSD_AZ/clone/DSD_Lab_AYA/project_2.ip_user_files/bd/BCD_modulo_3/sim/BCD_modulo_3.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module BCD_modulo_3
-INFO: [VRFC 10-311] analyzing module ONE_BCD_DIGIT_MOD1_imp_ED28PU
-INFO: [VRFC 10-311] analyzing module ONE_BCD_DIGIT_MOD2_imp_13ES4TO
-INFO: [VRFC 10-311] analyzing module ONE_BCD_DIGIT_MOD3_imp_N79OTL
-INFO: [VRFC 10-311] analyzing module ONE_BCD_DIGIT_MOD_imp_IL4AD9
-INFO: [VRFC 10-311] analyzing module add_mode_3_imp_ABO60A
-INFO: [VRFC 10-311] analyzing module add_mode_4_imp_OHRAYA
-INFO: [VRFC 10-311] analyzing module add_mode_5_imp_114MNJR
+INFO: [VRFC 10-311] analyzing module Mode_3_for_one_digit_0_imp_JM0TSP
+INFO: [VRFC 10-311] analyzing module mode_3_for_one_digit_1_imp_1LSY5UI
+INFO: [VRFC 10-311] analyzing module mode_3_for_one_digit_2_imp_UEXUJ8
+INFO: [VRFC 10-311] analyzing module mode_3_for_one_digit_3_imp_1CUCV9T
+INFO: [VRFC 10-311] analyzing module mode_3_of_sum_0_imp_1R4AJZP
+INFO: [VRFC 10-311] analyzing module mode_3_of_sum_1_imp_HGGJE8
+INFO: [VRFC 10-311] analyzing module mode_3_of_sum_2_imp_10DSXRY
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/DSD_AZ/clone/DSD_Lab_AYA/project_2.ip_user_files/bd/BCD_modulo_3/ip/BCD_modulo_3_util_vector_logic_0_2/sim/BCD_modulo_3_util_vector_logic_0_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module BCD_modulo_3_util_vector_logic_0_2
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/DSD_AZ/clone/DSD_Lab_AYA/project_2.ip_user_files/bd/BCD_modulo_3/ip/BCD_modulo_3_util_vector_logic_0_3/sim/BCD_modulo_3_util_vector_logic_0_3.v" into library xil_defaultlib
