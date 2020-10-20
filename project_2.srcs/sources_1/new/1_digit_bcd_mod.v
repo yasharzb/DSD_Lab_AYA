@@ -20,7 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module one_digit_bcd_mod_3(
+module one_digit_bcd_mod_3(A, MOD_OUT);
+input [3:0] A;
+output [1:0] MOD_OUT;
+reg [1:0] MOD_OUT;
 
-    );
+always @(A)
+begin
+    MOD_OUT[0] = !(A[3]) & ((!A[2] & !A[1] & A[0]) | (A[2] & !A[1] & !A[0]) | (A[2] & A[1] & A[0]));
+    MOD_OUT[1] = (!A[3] & !A[2] & A[1] & !A[0]) | (!A[3] & A[2] & !A[1] & A[0]) | (A[3] & !A[2] & !A[1] & !A[0]);
+end
+
 endmodule

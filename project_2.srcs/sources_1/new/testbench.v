@@ -21,21 +21,44 @@
 
 
 module testbench();
-    reg a;
-    reg b;
-    wire out;
+    reg a0;
+    reg a1;
+    reg a2;
+    reg a3;
+    wire mod_0;
+    wire mod_1;
     BCD_modulo_3 BCD_modulo_3_i
-        (.inee1(a),
-        .inee2(b),
-        .outee(out));
+        (.A0(a0),
+        .A1(a1),
+        .A2(a2),
+        .A3(a3),
+        .mod_0(mod_0),
+        .mod_1(mod_1)
+        );
         
-        
+    initial $monitor($time, "(mode_1, mode_0) = (%d, %d)", mod_1, mod_0);
+    
     initial
     begin
-        a = 1;
-        b = 1;
+        a0 = 0;
+        a1 = 0;
+        a2  =0;
+        a3 = 1;
+        
+        #10
+        
+        a0 = 1;
+        a1 = 1;
+        a2  =0;
+        a3 = 0;
+        
+        #10
         // hi 
-        $monitor($time, "(in, reset, out) = (%d, %d, %d)", a, b, out);
-    end
+        a0 = 0;
+        a1 = 0;
+        a2  =1;
+        a3 = 0;
+        #10;
+        end
     
 endmodule

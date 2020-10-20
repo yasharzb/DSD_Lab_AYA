@@ -2,19 +2,11 @@
 <Root MajorVersion="0" MinorVersion="37">
   <CompositeFile CompositeFileTopName="BCD_modulo_3" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1603176549"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1603176549"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1603176549"/>
-    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1603176549"/>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1603183260"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1603183260"/>
+    <Generation Name="SIMULATION" State="STALE" Timestamp="1603186611"/>
+    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1603186611"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="ip\BCD_modulo_3_util_vector_logic_0_0\BCD_modulo_3_util_vector_logic_0_0.xci" Type="IP">
-        <Instance HierarchyPath="util_vector_logic_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="synth\BCD_modulo_3.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
@@ -24,41 +16,6 @@
       <File Name="sim\BCD_modulo_3.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="BCD_modulo_3_ooc.xdc" Type="XDC">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="OUT_OF_CONTEXT"/>
-      </File>
-      <File Name="hw_handoff\BCD_modulo_3.hwh" Type="HwHandoff">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="hw_handoff\BCD_modulo_3_bd.tcl">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="synth\BCD_modulo_3.hwdef">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="sim\BCD_modulo_3.protoinst">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\BCD_modulo_3_util_vector_logic_1_0\BCD_modulo_3_util_vector_logic_1_0.xci" Type="IP">
-        <Instance HierarchyPath="util_vector_logic_1"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\BCD_modulo_3_util_vector_logic_0_2\BCD_modulo_3_util_vector_logic_0_2.xci" Type="IP">
@@ -183,6 +140,1321 @@
       </File>
       <File Name="ip\BCD_modulo_3_util_vector_logic_13_2\BCD_modulo_3_util_vector_logic_13_2.xci" Type="IP">
         <Instance HierarchyPath="ONE_BCD_DIGIT_MOD/util_vector_logic_15"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_13_3\BCD_modulo_3_util_vector_logic_13_3.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD/util_vector_logic_16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_14_0\BCD_modulo_3_util_vector_logic_14_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD/util_vector_logic_17"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_15_0\BCD_modulo_3_util_vector_logic_15_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD/util_vector_logic_18"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_13_4\BCD_modulo_3_util_vector_logic_13_4.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD/util_vector_logic_19"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_14_1\BCD_modulo_3_util_vector_logic_14_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD/util_vector_logic_20"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_15_1\BCD_modulo_3_util_vector_logic_15_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD/util_vector_logic_21"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_22_0\BCD_modulo_3_util_vector_logic_22_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD/util_vector_logic_22"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_22_1\BCD_modulo_3_util_vector_logic_22_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD/util_vector_logic_23"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="BCD_modulo_3_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+      <File Name="hw_handoff\BCD_modulo_3.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff\BCD_modulo_3_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="synth\BCD_modulo_3.hwdef">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="sim\BCD_modulo_3.protoinst">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_0_6\BCD_modulo_3_util_vector_logic_0_6.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_1_0\BCD_modulo_3_util_vector_logic_1_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_2_0\BCD_modulo_3_util_vector_logic_2_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_3_0\BCD_modulo_3_util_vector_logic_3_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_7\BCD_modulo_3_util_vector_logic_4_7.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_5_0\BCD_modulo_3_util_vector_logic_5_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_6_0\BCD_modulo_3_util_vector_logic_6_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_6"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_7_0\BCD_modulo_3_util_vector_logic_7_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_7"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_8_0\BCD_modulo_3_util_vector_logic_8_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_8"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_9_0\BCD_modulo_3_util_vector_logic_9_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_9"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_10_2\BCD_modulo_3_util_vector_logic_10_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_11_0\BCD_modulo_3_util_vector_logic_11_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_11"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_12_1\BCD_modulo_3_util_vector_logic_12_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_12"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_13_5\BCD_modulo_3_util_vector_logic_13_5.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_13"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_14_2\BCD_modulo_3_util_vector_logic_14_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_14"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_15_2\BCD_modulo_3_util_vector_logic_15_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_15"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_16_0\BCD_modulo_3_util_vector_logic_16_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_17_0\BCD_modulo_3_util_vector_logic_17_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_17"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_18_0\BCD_modulo_3_util_vector_logic_18_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_18"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_19_0\BCD_modulo_3_util_vector_logic_19_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_19"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_20_0\BCD_modulo_3_util_vector_logic_20_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_20"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_21_0\BCD_modulo_3_util_vector_logic_21_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_21"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_22_2\BCD_modulo_3_util_vector_logic_22_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_22"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_23_0\BCD_modulo_3_util_vector_logic_23_0.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD1/util_vector_logic_23"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_0_7\BCD_modulo_3_util_vector_logic_0_7.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_0_8\BCD_modulo_3_util_vector_logic_0_8.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_0_9\BCD_modulo_3_util_vector_logic_0_9.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_0_10\BCD_modulo_3_util_vector_logic_0_10.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_8\BCD_modulo_3_util_vector_logic_4_8.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_9\BCD_modulo_3_util_vector_logic_4_9.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_10\BCD_modulo_3_util_vector_logic_4_10.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_6"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_11\BCD_modulo_3_util_vector_logic_4_11.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_7"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_12\BCD_modulo_3_util_vector_logic_4_12.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_8"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_13\BCD_modulo_3_util_vector_logic_4_13.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_9"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_14\BCD_modulo_3_util_vector_logic_4_14.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_15\BCD_modulo_3_util_vector_logic_4_15.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_11"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_16\BCD_modulo_3_util_vector_logic_4_16.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_12"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_13_7\BCD_modulo_3_util_vector_logic_13_7.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_13"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_13_8\BCD_modulo_3_util_vector_logic_13_8.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_14"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_17\BCD_modulo_3_util_vector_logic_4_17.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_15"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_5_1\BCD_modulo_3_util_vector_logic_5_1.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_7_1\BCD_modulo_3_util_vector_logic_7_1.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_17"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_15_3\BCD_modulo_3_util_vector_logic_15_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_18"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_16_1\BCD_modulo_3_util_vector_logic_16_1.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_19"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_17_1\BCD_modulo_3_util_vector_logic_17_1.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_20"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_15_4\BCD_modulo_3_util_vector_logic_15_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_21"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_16_2\BCD_modulo_3_util_vector_logic_16_2.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_22"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_17_2\BCD_modulo_3_util_vector_logic_17_2.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_23"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_13_9\BCD_modulo_3_util_vector_logic_13_9.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_24"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_14_3\BCD_modulo_3_util_vector_logic_14_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_3/util_vector_logic_25"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_0_11\BCD_modulo_3_util_vector_logic_0_11.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_1_1\BCD_modulo_3_util_vector_logic_1_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_2_1\BCD_modulo_3_util_vector_logic_2_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_3_1\BCD_modulo_3_util_vector_logic_3_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_18\BCD_modulo_3_util_vector_logic_4_18.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_5_2\BCD_modulo_3_util_vector_logic_5_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_6_1\BCD_modulo_3_util_vector_logic_6_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_6"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_7_2\BCD_modulo_3_util_vector_logic_7_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_7"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_8_1\BCD_modulo_3_util_vector_logic_8_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_8"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_9_1\BCD_modulo_3_util_vector_logic_9_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_9"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_10_3\BCD_modulo_3_util_vector_logic_10_3.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_11_1\BCD_modulo_3_util_vector_logic_11_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_11"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_12_2\BCD_modulo_3_util_vector_logic_12_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_12"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_13_10\BCD_modulo_3_util_vector_logic_13_10.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_13"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_14_4\BCD_modulo_3_util_vector_logic_14_4.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_14"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_15_5\BCD_modulo_3_util_vector_logic_15_5.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_15"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_16_3\BCD_modulo_3_util_vector_logic_16_3.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_17_3\BCD_modulo_3_util_vector_logic_17_3.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_17"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_18_1\BCD_modulo_3_util_vector_logic_18_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_18"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_19_1\BCD_modulo_3_util_vector_logic_19_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_19"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_20_1\BCD_modulo_3_util_vector_logic_20_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_20"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_21_1\BCD_modulo_3_util_vector_logic_21_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_21"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_22_3\BCD_modulo_3_util_vector_logic_22_3.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_22"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_23_1\BCD_modulo_3_util_vector_logic_23_1.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD2/util_vector_logic_23"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_0_12\BCD_modulo_3_util_vector_logic_0_12.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_1_2\BCD_modulo_3_util_vector_logic_1_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_2_2\BCD_modulo_3_util_vector_logic_2_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_3_2\BCD_modulo_3_util_vector_logic_3_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_19\BCD_modulo_3_util_vector_logic_4_19.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_5_3\BCD_modulo_3_util_vector_logic_5_3.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_6_2\BCD_modulo_3_util_vector_logic_6_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_6"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_7_3\BCD_modulo_3_util_vector_logic_7_3.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_7"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_8_2\BCD_modulo_3_util_vector_logic_8_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_8"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_9_2\BCD_modulo_3_util_vector_logic_9_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_9"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_10_4\BCD_modulo_3_util_vector_logic_10_4.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_11_2\BCD_modulo_3_util_vector_logic_11_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_11"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_12_3\BCD_modulo_3_util_vector_logic_12_3.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_12"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_13_11\BCD_modulo_3_util_vector_logic_13_11.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_13"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_14_5\BCD_modulo_3_util_vector_logic_14_5.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_14"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_15_6\BCD_modulo_3_util_vector_logic_15_6.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_15"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_16_4\BCD_modulo_3_util_vector_logic_16_4.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_17_4\BCD_modulo_3_util_vector_logic_17_4.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_17"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_18_2\BCD_modulo_3_util_vector_logic_18_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_18"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_19_2\BCD_modulo_3_util_vector_logic_19_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_19"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_20_2\BCD_modulo_3_util_vector_logic_20_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_20"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_21_2\BCD_modulo_3_util_vector_logic_21_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_21"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_22_4\BCD_modulo_3_util_vector_logic_22_4.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_22"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_23_2\BCD_modulo_3_util_vector_logic_23_2.xci" Type="IP">
+        <Instance HierarchyPath="ONE_BCD_DIGIT_MOD3/util_vector_logic_23"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_0_13\BCD_modulo_3_util_vector_logic_0_13.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_1_3\BCD_modulo_3_util_vector_logic_1_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_2_3\BCD_modulo_3_util_vector_logic_2_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_3_3\BCD_modulo_3_util_vector_logic_3_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_20\BCD_modulo_3_util_vector_logic_4_20.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_5_4\BCD_modulo_3_util_vector_logic_5_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_6_3\BCD_modulo_3_util_vector_logic_6_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_6"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_7_4\BCD_modulo_3_util_vector_logic_7_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_7"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_8_3\BCD_modulo_3_util_vector_logic_8_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_8"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_9_3\BCD_modulo_3_util_vector_logic_9_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_9"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_10_5\BCD_modulo_3_util_vector_logic_10_5.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_11_3\BCD_modulo_3_util_vector_logic_11_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_11"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_12_4\BCD_modulo_3_util_vector_logic_12_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_12"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_13_12\BCD_modulo_3_util_vector_logic_13_12.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_13"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_14_6\BCD_modulo_3_util_vector_logic_14_6.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_14"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_15_7\BCD_modulo_3_util_vector_logic_15_7.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_15"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_16_5\BCD_modulo_3_util_vector_logic_16_5.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_17_5\BCD_modulo_3_util_vector_logic_17_5.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_17"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_18_3\BCD_modulo_3_util_vector_logic_18_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_18"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_19_3\BCD_modulo_3_util_vector_logic_19_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_19"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_20_3\BCD_modulo_3_util_vector_logic_20_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_20"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_21_3\BCD_modulo_3_util_vector_logic_21_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_21"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_22_5\BCD_modulo_3_util_vector_logic_22_5.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_22"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_23_3\BCD_modulo_3_util_vector_logic_23_3.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_23"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_24_0\BCD_modulo_3_util_vector_logic_24_0.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_24"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_25_0\BCD_modulo_3_util_vector_logic_25_0.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_4/util_vector_logic_25"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_0_14\BCD_modulo_3_util_vector_logic_0_14.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_1_4\BCD_modulo_3_util_vector_logic_1_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_2_4\BCD_modulo_3_util_vector_logic_2_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_3_4\BCD_modulo_3_util_vector_logic_3_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_4_21\BCD_modulo_3_util_vector_logic_4_21.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_5_5\BCD_modulo_3_util_vector_logic_5_5.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_6_4\BCD_modulo_3_util_vector_logic_6_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_6"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_7_5\BCD_modulo_3_util_vector_logic_7_5.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_7"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_8_4\BCD_modulo_3_util_vector_logic_8_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_8"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_9_4\BCD_modulo_3_util_vector_logic_9_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_9"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_10_6\BCD_modulo_3_util_vector_logic_10_6.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_11_4\BCD_modulo_3_util_vector_logic_11_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_11"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_12_5\BCD_modulo_3_util_vector_logic_12_5.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_12"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_13_13\BCD_modulo_3_util_vector_logic_13_13.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_13"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_14_7\BCD_modulo_3_util_vector_logic_14_7.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_14"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_15_8\BCD_modulo_3_util_vector_logic_15_8.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_15"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_16_6\BCD_modulo_3_util_vector_logic_16_6.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_17_6\BCD_modulo_3_util_vector_logic_17_6.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_17"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_18_4\BCD_modulo_3_util_vector_logic_18_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_18"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_19_4\BCD_modulo_3_util_vector_logic_19_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_19"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_20_4\BCD_modulo_3_util_vector_logic_20_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_20"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_21_4\BCD_modulo_3_util_vector_logic_21_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_21"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_22_6\BCD_modulo_3_util_vector_logic_22_6.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_22"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_23_4\BCD_modulo_3_util_vector_logic_23_4.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_23"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_24_1\BCD_modulo_3_util_vector_logic_24_1.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_24"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_25_1\BCD_modulo_3_util_vector_logic_25_1.xci" Type="IP">
+        <Instance HierarchyPath="add_mode_5/util_vector_logic_25"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_0_15\BCD_modulo_3_util_vector_logic_0_15.xci" Type="IP">
+        <Instance HierarchyPath="util_vector_logic_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_0_16\BCD_modulo_3_util_vector_logic_0_16.xci" Type="IP">
+        <Instance HierarchyPath="util_vector_logic_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BCD_modulo_3_util_vector_logic_0_17\BCD_modulo_3_util_vector_logic_0_17.xci" Type="IP">
+        <Instance HierarchyPath="util_vector_logic_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
