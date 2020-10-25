@@ -1,0 +1,14 @@
+
+*** Running vivado
+    with args -log BCD_modulo_3_util_vector_logic_8_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BCD_modulo_3_util_vector_logic_8_1.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source BCD_modulo_3_util_vector_logic_8_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 354.711 ; gain = 62.641
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP BCD_modulo_3_util_vector_logic_8_1, cache-ID = 133abd546d7e05e5.
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 20 20:10:15 2020...

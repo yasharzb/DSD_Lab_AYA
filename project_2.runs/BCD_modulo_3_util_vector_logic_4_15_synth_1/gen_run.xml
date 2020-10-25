@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="BCD_modulo_3_util_vector_logic_4_15_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1603211450">
+  <File Type="PA-TCL" Name="BCD_modulo_3_util_vector_logic_4_15.tcl"/>
+  <File Type="REPORTS-TCL" Name="BCD_modulo_3_util_vector_logic_4_15_reports.tcl"/>
+  <File Type="RDS-RDS" Name="BCD_modulo_3_util_vector_logic_4_15.vds"/>
+  <File Type="RDS-DCP" Name="BCD_modulo_3_util_vector_logic_4_15.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BCD_modulo_3_util_vector_logic_4_15">
+    <File Path="$PSRCDIR/sources_1/bd/BCD_modulo_3/ip/BCD_modulo_3_util_vector_logic_4_15/BCD_modulo_3_util_vector_logic_4_15.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="BCD_modulo_3_util_vector_logic_4_15"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BCD_modulo_3_util_vector_logic_4_15">
+    <File Path="$PSRCDIR/sources_1/bd/BCD_modulo_3/ip/BCD_modulo_3_util_vector_logic_4_15/BCD_modulo_3_util_vector_logic_4_15.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="BCD_modulo_3_util_vector_logic_4_15"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
