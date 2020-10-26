@@ -2,50 +2,53 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port clear_bar -pg 1 -lvl 0 -x -10 -y 126 -defaultsOSRD
-preplace port clock -pg 1 -lvl 0 -x -10 -y 214 -defaultsOSRD
-preplace port U -pg 1 -lvl 0 -x -10 -y 244 -defaultsOSRD
-preplace portBus Q_bar -pg 1 -lvl 13 -x 2810 -y 50 -defaultsOSRD
-preplace portBus Q -pg 1 -lvl 13 -x 2810 -y 20 -defaultsOSRD
-preplace inst JK_FF_0 -pg 1 -lvl 3 -x 580 -y 170 -defaultsOSRD
-preplace inst JK_FF_1 -pg 1 -lvl 6 -x 1180 -y 162 -defaultsOSRD
-preplace inst JK_FF_2 -pg 1 -lvl 9 -x 1800 -y 200 -defaultsOSRD
-preplace inst JK_FF_3 -pg 1 -lvl 12 -x 2690 -y 270 -defaultsOSRD
-preplace inst xor_0 -pg 1 -lvl 1 -x 110 -y 140 -defaultsOSRD -resize 83 93
-preplace inst not_0 -pg 1 -lvl 2 -x 350 -y 140 -defaultsOSRD -resize 83 88
-preplace inst and_0 -pg 1 -lvl 4 -x 780 -y 70 -defaultsOSRD -resize 106 93
-preplace inst and_1 -pg 1 -lvl 4 -x 780 -y 190 -defaultsOSRD -resize 83 93
-preplace inst not_1 -pg 1 -lvl 3 -x 580 -y 340 -defaultsOSRD -resize 102 88
-preplace inst or_0 -pg 1 -lvl 5 -x 970 -y 140 -defaultsOSRD -resize 83 93
-preplace inst and_2 -pg 1 -lvl 7 -x 1380 -y 60 -defaultsOSRD -resize 100 93
-preplace inst and_3 -pg 1 -lvl 7 -x 1380 -y 180 -defaultsOSRD -resize 86 93
-preplace inst or_1 -pg 1 -lvl 8 -x 1570 -y 173 -defaultsOSRD -resize 85 93
-preplace inst and_4 -pg 1 -lvl 10 -x 2050 -y 20 -defaultsOSRD -resize 83 93
-preplace inst and_5 -pg 1 -lvl 10 -x 2050 -y 370 -defaultsOSRD -resize 93 93
-preplace inst or_2 -pg 1 -lvl 11 -x 2340 -y 190 -defaultsOSRD -resize 114 93
-preplace netloc clear_bar_1 1 0 12 10 70 N 70 440 0 N 0 N 0 1060 -10 N -10 N -10 1660 300 N 300 N 300 N
-preplace netloc util_vector_logic_0_Res 1 1 1 N 140
-preplace netloc not_0_Res 1 2 1 460 140n
-preplace netloc U_1 1 0 4 NJ 244 NJ 244 450J 62 N
-preplace netloc JK_FF_0_Q 1 3 1 680 77n
-preplace netloc not_1_Res 1 3 1 680 197n
-preplace netloc JK_FF_0_Q_bar 1 3 1 680 180n
-preplace netloc and_0_Res 1 4 3 870 52 N 52 N
-preplace netloc and_1_Res 1 4 3 880 70 N 70 1280
-preplace netloc or_0_Res 1 5 1 1070 132n
-preplace netloc JK_FF_1_Q 1 6 1 1290 67n
-preplace netloc JK_FF_1_Q_bar 1 6 1 N 172
-preplace netloc and_2_Res 1 7 3 1470 12 N 12 N
-preplace netloc and_3_Res 1 7 3 1480 103 N 103 1910
-preplace netloc or_1_Res 1 8 1 1670 170n
-preplace netloc clock_1 1 0 12 NJ 214 NJ 214 460 260 N 260 N 260 1070 250 N 250 N 250 1670 280 N 280 N 280 N
-preplace netloc JK_FF_2_Q 1 9 1 1920 27n
-preplace netloc JK_FF_2_Q_bar 1 9 1 1900 210n
-preplace netloc and_4_Res 1 10 1 2140 20n
-preplace netloc and_5_Res 1 10 1 2140 197n
-preplace netloc or_2_Res 1 11 1 2430 190n
-levelinfo -pg 1 -10 110 350 580 780 970 1180 1380 1570 1800 2050 2340 2690 2810
-pagesize -pg 1 -db -bbox -sgen -120 -90 2930 480
+preplace port clear_bar -pg 1 -lvl 0 -x -10 -y 82 -defaultsOSRD
+preplace port clock -pg 1 -lvl 0 -x -10 -y 222 -defaultsOSRD
+preplace port U -pg 1 -lvl 0 -x -10 -y 252 -defaultsOSRD
+preplace port Q0 -pg 1 -lvl 13 -x 2430 -y -50 -defaultsOSRD
+preplace port Q1 -pg 1 -lvl 13 -x 2430 -y 30 -defaultsOSRD
+preplace port Q2 -pg 1 -lvl 13 -x 2430 -y 260 -defaultsOSRD
+preplace port Q3 -pg 1 -lvl 13 -x 2430 -y 490 -defaultsOSRD
+preplace inst JK_FF_0 -pg 1 -lvl 3 -x 520 -y 182 -defaultsOSRD
+preplace inst JK_FF_1 -pg 1 -lvl 6 -x 1120 -y 182 -defaultsOSRD
+preplace inst JK_FF_2 -pg 1 -lvl 9 -x 1700 -y 210 -defaultsOSRD
+preplace inst JK_FF_3 -pg 1 -lvl 12 -x 2310 -y 128 -defaultsOSRD
+preplace inst xor_0 -pg 1 -lvl 1 -x 110 -y 160 -defaultsOSRD -resize 83 93
+preplace inst not_0 -pg 1 -lvl 2 -x 300 -y 160 -defaultsOSRD -resize 83 88
+preplace inst and_0 -pg 1 -lvl 4 -x 730 -y 80 -defaultsOSRD -resize 106 93
+preplace inst and_1 -pg 1 -lvl 4 -x 730 -y 200 -defaultsOSRD -resize 83 93
+preplace inst not_1 -pg 1 -lvl 3 -x 520 -y 350 -defaultsOSRD -resize 102 88
+preplace inst or_0 -pg 1 -lvl 5 -x 910 -y 162 -defaultsOSRD -resize 83 93
+preplace inst and_2 -pg 1 -lvl 7 -x 1310 -y 80 -defaultsOSRD -resize 100 93
+preplace inst and_3 -pg 1 -lvl 7 -x 1310 -y 200 -defaultsOSRD -resize 86 93
+preplace inst or_1 -pg 1 -lvl 8 -x 1490 -y 190 -defaultsOSRD -resize 85 93
+preplace inst and_4 -pg 1 -lvl 10 -x 1910 -y 60 -defaultsOSRD -resize 83 93
+preplace inst and_5 -pg 1 -lvl 10 -x 1910 -y 230 -defaultsOSRD -resize 93 93
+preplace inst or_2 -pg 1 -lvl 11 -x 2110 -y 68 -defaultsOSRD -resize 114 93
+preplace netloc clear_bar_1 1 0 12 20 230 N 230 410 270 N 270 N 270 1000 282 N 282 N 282 1590 120 1810 150 N 150 2210
+preplace netloc util_vector_logic_0_Res 1 1 1 N 160
+preplace netloc not_0_Res 1 2 1 410 152n
+preplace netloc U_1 1 0 4 NJ 252 NJ 252 390J 72 N
+preplace netloc JK_FF_0_Q 1 3 10 620 -50 N -50 N -50 N -50 N -50 N -50 N -50 N -50 N -50 N
+preplace netloc not_1_Res 1 3 1 620 207n
+preplace netloc JK_FF_0_Q_bar 1 3 1 N 192
+preplace netloc and_0_Res 1 4 3 820 72 N 72 N
+preplace netloc and_1_Res 1 4 3 820 260 1010 262 1220
+preplace netloc or_0_Res 1 5 1 1020 152n
+preplace netloc JK_FF_1_Q 1 6 7 1220 -20 N -20 N -20 N -20 N -20 N -20 2410
+preplace netloc JK_FF_1_Q_bar 1 6 1 N 192
+preplace netloc and_2_Res 1 7 3 1400 52 N 52 N
+preplace netloc and_3_Res 1 7 3 1400 292 N 292 1800
+preplace netloc or_1_Res 1 8 1 1600 180n
+preplace netloc clock_1 1 0 12 10J 240 NJ 240 400 280 N 280 N 280 1020 272 N 272 N 272 1580 -10 N -10 N -10 2210
+preplace netloc JK_FF_2_Q 1 9 4 1800 160 N 160 2200 260 N
+preplace netloc JK_FF_2_Q_bar 1 9 1 1810 220n
+preplace netloc and_4_Res 1 10 1 N 60
+preplace netloc and_5_Res 1 10 1 2000 75n
+preplace netloc or_2_Res 1 11 1 2200 68n
+preplace netloc JK_FF_3_Q 1 12 1 2410 118n
+levelinfo -pg 1 -10 110 300 520 730 910 1120 1310 1490 1700 1910 2110 2310 2430
+pagesize -pg 1 -db -bbox -sgen -120 -70 2500 660
 "
 }
 0

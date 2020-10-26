@@ -196,18 +196,20 @@
       "clock": {
         "direction": "I"
       },
-      "Q_bar": {
-        "direction": "O",
-        "left": "0",
-        "right": "0"
-      },
-      "Q": {
-        "direction": "O",
-        "left": "0",
-        "right": "0"
-      },
       "U": {
         "direction": "I"
+      },
+      "Q0": {
+        "direction": "O"
+      },
+      "Q1": {
+        "direction": "O"
+      },
+      "Q2": {
+        "direction": "O"
+      },
+      "Q3": {
+        "direction": "O"
       }
     },
     "components": {
@@ -3596,7 +3598,8 @@
       "JK_FF_0_Q": {
         "ports": [
           "JK_FF_0/Q",
-          "and_0/Op2"
+          "and_0/Op2",
+          "Q0"
         ]
       },
       "not_1_Res": {
@@ -3635,7 +3638,8 @@
       "JK_FF_1_Q": {
         "ports": [
           "JK_FF_1/Q",
-          "and_2/Op2"
+          "and_2/Op2",
+          "Q1"
         ]
       },
       "JK_FF_1_Q_bar": {
@@ -3677,7 +3681,8 @@
       "JK_FF_2_Q": {
         "ports": [
           "JK_FF_2/Q",
-          "and_4/Op2"
+          "and_4/Op2",
+          "Q2"
         ]
       },
       "JK_FF_2_Q_bar": {
@@ -3703,6 +3708,12 @@
           "or_2/Res",
           "JK_FF_3/J",
           "JK_FF_3/K"
+        ]
+      },
+      "JK_FF_3_Q": {
+        "ports": [
+          "JK_FF_3/Q",
+          "Q3"
         ]
       }
     }
