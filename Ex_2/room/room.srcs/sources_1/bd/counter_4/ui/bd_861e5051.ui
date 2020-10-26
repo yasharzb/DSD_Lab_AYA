@@ -19,11 +19,11 @@ preplace inst not_1 -pg 1 -lvl 3 -x 580 -y 340 -defaultsOSRD -resize 102 88
 preplace inst or_0 -pg 1 -lvl 5 -x 970 -y 140 -defaultsOSRD -resize 83 93
 preplace inst and_2 -pg 1 -lvl 7 -x 1380 -y 60 -defaultsOSRD -resize 100 93
 preplace inst and_3 -pg 1 -lvl 7 -x 1380 -y 180 -defaultsOSRD -resize 86 93
-preplace inst or_1 -pg 1 -lvl 8 -x 1560 -y 173 -defaultsOSRD -resize 85 93
+preplace inst or_1 -pg 1 -lvl 8 -x 1570 -y 173 -defaultsOSRD -resize 85 93
 preplace inst and_4 -pg 1 -lvl 10 -x 2050 -y 20 -defaultsOSRD -resize 83 93
-preplace inst and_5 -pg 1 -lvl 10 -x 2050 -y 410 -defaultsOSRD -resize 93 93
-preplace inst or_2 -pg 1 -lvl 11 -x 2340 -y 130 -defaultsOSRD
-preplace netloc clear_bar_1 1 0 12 10 70 N 70 440 0 N 0 N 0 1060 -10 N -10 N -10 1650 300 N 300 N 300 N
+preplace inst and_5 -pg 1 -lvl 10 -x 2050 -y 370 -defaultsOSRD -resize 93 93
+preplace inst or_2 -pg 1 -lvl 11 -x 2340 -y 190 -defaultsOSRD -resize 114 93
+preplace netloc clear_bar_1 1 0 12 10 70 N 70 440 0 N 0 N 0 1060 -10 N -10 N -10 1660 300 N 300 N 300 N
 preplace netloc util_vector_logic_0_Res 1 1 1 N 140
 preplace netloc not_0_Res 1 2 1 460 140n
 preplace netloc U_1 1 0 4 NJ 244 NJ 244 450J 62 N
@@ -35,11 +35,16 @@ preplace netloc and_1_Res 1 4 3 880 70 N 70 1280
 preplace netloc or_0_Res 1 5 1 1070 132n
 preplace netloc JK_FF_1_Q 1 6 1 1290 67n
 preplace netloc JK_FF_1_Q_bar 1 6 1 N 172
-preplace netloc and_2_Res 1 7 1 1470 60n
-preplace netloc and_3_Res 1 7 1 N 180
-preplace netloc or_1_Res 1 8 1 1660 170n
-preplace netloc clock_1 1 0 9 NJ 214 NJ 214 460 260 N 260 N 260 1070 250 N 250 N 250 1660
-levelinfo -pg 1 -10 110 350 580 780 970 1180 1380 1560 1800 2050 2340 2690 2810
+preplace netloc and_2_Res 1 7 3 1470 12 N 12 N
+preplace netloc and_3_Res 1 7 3 1480 103 N 103 1910
+preplace netloc or_1_Res 1 8 1 1670 170n
+preplace netloc clock_1 1 0 12 NJ 214 NJ 214 460 260 N 260 N 260 1070 250 N 250 N 250 1670 280 N 280 N 280 N
+preplace netloc JK_FF_2_Q 1 9 1 1920 27n
+preplace netloc JK_FF_2_Q_bar 1 9 1 1900 210n
+preplace netloc and_4_Res 1 10 1 2140 20n
+preplace netloc and_5_Res 1 10 1 2140 197n
+preplace netloc or_2_Res 1 11 1 2430 190n
+levelinfo -pg 1 -10 110 350 580 780 970 1180 1380 1570 1800 2050 2340 2690 2810
 pagesize -pg 1 -db -bbox -sgen -120 -90 2930 480
 "
 }

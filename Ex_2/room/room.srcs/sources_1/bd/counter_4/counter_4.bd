@@ -3647,13 +3647,15 @@
       "and_2_Res": {
         "ports": [
           "and_2/Res",
-          "or_1/Op1"
+          "or_1/Op1",
+          "and_4/Op1"
         ]
       },
       "and_3_Res": {
         "ports": [
           "and_3/Res",
-          "or_1/Op2"
+          "or_1/Op2",
+          "and_5/Op2"
         ]
       },
       "or_1_Res": {
@@ -3668,7 +3670,39 @@
           "clock",
           "JK_FF_0/clock",
           "JK_FF_1/clock",
-          "JK_FF_2/clock"
+          "JK_FF_2/clock",
+          "JK_FF_3/clock"
+        ]
+      },
+      "JK_FF_2_Q": {
+        "ports": [
+          "JK_FF_2/Q",
+          "and_4/Op2"
+        ]
+      },
+      "JK_FF_2_Q_bar": {
+        "ports": [
+          "JK_FF_2/Q_bar",
+          "and_5/Op1"
+        ]
+      },
+      "and_4_Res": {
+        "ports": [
+          "and_4/Res",
+          "or_2/Op1"
+        ]
+      },
+      "and_5_Res": {
+        "ports": [
+          "and_5/Res",
+          "or_2/Op2"
+        ]
+      },
+      "or_2_Res": {
+        "ports": [
+          "or_2/Res",
+          "JK_FF_3/J",
+          "JK_FF_3/K"
         ]
       }
     }
