@@ -122,6 +122,1614 @@ if { $nRet != 0 } {
 
 
 # Hierarchical cell: nand_3_7
+proc create_hier_cell_nand_3_7_3 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_7_3() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_6
+proc create_hier_cell_nand_3_6_3 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_6_3() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_5
+proc create_hier_cell_nand_3_5_3 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_5_3() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_4
+proc create_hier_cell_nand_3_4_3 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_4_3() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_3
+proc create_hier_cell_nand_3_3_3 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_3_3() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_2
+proc create_hier_cell_nand_3_2_3 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_2_3() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_1
+proc create_hier_cell_nand_3_1_3 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_1_3() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I -from 0 -to 0 in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 n_out
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins n_out] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_0
+proc create_hier_cell_nand_3_0_3 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_0_3() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_7
+proc create_hier_cell_nand_3_7_2 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_7_2() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_6
+proc create_hier_cell_nand_3_6_2 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_6_2() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_5
+proc create_hier_cell_nand_3_5_2 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_5_2() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_4
+proc create_hier_cell_nand_3_4_2 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_4_2() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_3
+proc create_hier_cell_nand_3_3_2 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_3_2() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_2
+proc create_hier_cell_nand_3_2_2 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_2_2() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_1
+proc create_hier_cell_nand_3_1_2 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_1_2() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I -from 0 -to 0 in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 n_out
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins n_out] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_0
+proc create_hier_cell_nand_3_0_2 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_0_2() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_7
+proc create_hier_cell_nand_3_7_1 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_7_1() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_6
+proc create_hier_cell_nand_3_6_1 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_6_1() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_5
+proc create_hier_cell_nand_3_5_1 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_5_1() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_4
+proc create_hier_cell_nand_3_4_1 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_4_1() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_3
+proc create_hier_cell_nand_3_3_1 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_3_1() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_2
+proc create_hier_cell_nand_3_2_1 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_2_1() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_1
+proc create_hier_cell_nand_3_1_1 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_1_1() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I -from 0 -to 0 in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 n_out
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins n_out] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_0
+proc create_hier_cell_nand_3_0_1 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_nand_3_0_1() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I in1
+  create_bd_pin -dir I in2
+  create_bd_pin -dir O -from 0 -to 0 out_n
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {and} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_andgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
+  # Create port connections
+  connect_bd_net -net in1_1 [get_bd_pins in1] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net in2_1 [get_bd_pins in2] [get_bd_pins util_vector_logic_0/Op2]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins util_vector_logic_2/Op1]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins out_n] [get_bd_pins util_vector_logic_2/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: nand_3_7
 proc create_hier_cell_nand_3_7 { parentCell nameHier } {
 
   variable script_folder
@@ -658,6 +2266,312 @@ proc create_hier_cell_nand_3_0 { parentCell nameHier } {
 }
 
 # Hierarchical cell: DFF
+proc create_hier_cell_DFF_3 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_DFF_3() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I D
+  create_bd_pin -dir O -from 0 -to 0 Q
+  create_bd_pin -dir O -from 0 -to 0 Q_bar
+  create_bd_pin -dir I clear_bar
+  create_bd_pin -dir I clock
+
+  # Create instance: nand_3_0
+  create_hier_cell_nand_3_0_3 $hier_obj nand_3_0
+
+  # Create instance: nand_3_1
+  create_hier_cell_nand_3_1_3 $hier_obj nand_3_1
+
+  # Create instance: nand_3_2
+  create_hier_cell_nand_3_2_3 $hier_obj nand_3_2
+
+  # Create instance: nand_3_3
+  create_hier_cell_nand_3_3_3 $hier_obj nand_3_3
+
+  # Create instance: nand_3_4
+  create_hier_cell_nand_3_4_3 $hier_obj nand_3_4
+
+  # Create instance: nand_3_5
+  create_hier_cell_nand_3_5_3 $hier_obj nand_3_5
+
+  # Create instance: nand_3_6
+  create_hier_cell_nand_3_6_3 $hier_obj nand_3_6
+
+  # Create instance: nand_3_7
+  create_hier_cell_nand_3_7_3 $hier_obj nand_3_7
+
+  # Create instance: not_0, and set properties
+  set not_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 not_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $not_0
+
+  # Create instance: not_1, and set properties
+  set not_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 not_1 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $not_1
+
+  # Create port connections
+  connect_bd_net -net D_1 [get_bd_pins D] [get_bd_pins nand_3_1/in2]
+  connect_bd_net -net clear_bar_1 [get_bd_pins clear_bar] [get_bd_pins nand_3_0/in1] [get_bd_pins nand_3_3/in1]
+  connect_bd_net -net clock_1 [get_bd_pins clock] [get_bd_pins not_1/Op1]
+  connect_bd_net -net in1_1 [get_bd_pins nand_3_1/in1] [get_bd_pins nand_3_4/out_n] [get_bd_pins nand_3_6/in1]
+  connect_bd_net -net in1_2 [get_bd_pins nand_3_0/out_n] [get_bd_pins nand_3_4/in1] [get_bd_pins nand_3_5/in1]
+  connect_bd_net -net in2_1 [get_bd_pins nand_3_2/in2] [get_bd_pins nand_3_5/out_n] [get_bd_pins nand_3_7/in2]
+  connect_bd_net -net in2_2 [get_bd_pins nand_3_5/in2] [get_bd_pins not_0/Res]
+  connect_bd_net -net nand_3_1_n_out [get_bd_pins nand_3_1/n_out] [get_bd_pins nand_3_2/in1]
+  connect_bd_net -net nand_3_2_out_n [get_bd_pins nand_3_2/out_n] [get_bd_pins nand_3_3/in2]
+  connect_bd_net -net nand_3_3_out_n [get_bd_pins nand_3_3/out_n] [get_bd_pins nand_3_4/in2] [get_bd_pins not_0/Op1]
+  connect_bd_net -net nand_3_6_out_n [get_bd_pins Q_bar] [get_bd_pins nand_3_6/out_n] [get_bd_pins nand_3_7/in1]
+  connect_bd_net -net nand_3_7_out_n [get_bd_pins Q] [get_bd_pins nand_3_6/in2] [get_bd_pins nand_3_7/out_n]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins nand_3_0/in2] [get_bd_pins not_1/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: DFF
+proc create_hier_cell_DFF_2 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_DFF_2() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I D
+  create_bd_pin -dir O -from 0 -to 0 Q
+  create_bd_pin -dir O -from 0 -to 0 Q_bar
+  create_bd_pin -dir I clear_bar
+  create_bd_pin -dir I clock
+
+  # Create instance: nand_3_0
+  create_hier_cell_nand_3_0_2 $hier_obj nand_3_0
+
+  # Create instance: nand_3_1
+  create_hier_cell_nand_3_1_2 $hier_obj nand_3_1
+
+  # Create instance: nand_3_2
+  create_hier_cell_nand_3_2_2 $hier_obj nand_3_2
+
+  # Create instance: nand_3_3
+  create_hier_cell_nand_3_3_2 $hier_obj nand_3_3
+
+  # Create instance: nand_3_4
+  create_hier_cell_nand_3_4_2 $hier_obj nand_3_4
+
+  # Create instance: nand_3_5
+  create_hier_cell_nand_3_5_2 $hier_obj nand_3_5
+
+  # Create instance: nand_3_6
+  create_hier_cell_nand_3_6_2 $hier_obj nand_3_6
+
+  # Create instance: nand_3_7
+  create_hier_cell_nand_3_7_2 $hier_obj nand_3_7
+
+  # Create instance: not_0, and set properties
+  set not_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 not_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $not_0
+
+  # Create instance: not_1, and set properties
+  set not_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 not_1 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $not_1
+
+  # Create port connections
+  connect_bd_net -net D_1 [get_bd_pins D] [get_bd_pins nand_3_1/in2]
+  connect_bd_net -net clear_bar_1 [get_bd_pins clear_bar] [get_bd_pins nand_3_0/in1] [get_bd_pins nand_3_3/in1]
+  connect_bd_net -net clock_1 [get_bd_pins clock] [get_bd_pins not_1/Op1]
+  connect_bd_net -net in1_1 [get_bd_pins nand_3_1/in1] [get_bd_pins nand_3_4/out_n] [get_bd_pins nand_3_6/in1]
+  connect_bd_net -net in1_2 [get_bd_pins nand_3_0/out_n] [get_bd_pins nand_3_4/in1] [get_bd_pins nand_3_5/in1]
+  connect_bd_net -net in2_1 [get_bd_pins nand_3_2/in2] [get_bd_pins nand_3_5/out_n] [get_bd_pins nand_3_7/in2]
+  connect_bd_net -net in2_2 [get_bd_pins nand_3_5/in2] [get_bd_pins not_0/Res]
+  connect_bd_net -net nand_3_1_n_out [get_bd_pins nand_3_1/n_out] [get_bd_pins nand_3_2/in1]
+  connect_bd_net -net nand_3_2_out_n [get_bd_pins nand_3_2/out_n] [get_bd_pins nand_3_3/in2]
+  connect_bd_net -net nand_3_3_out_n [get_bd_pins nand_3_3/out_n] [get_bd_pins nand_3_4/in2] [get_bd_pins not_0/Op1]
+  connect_bd_net -net nand_3_6_out_n [get_bd_pins Q_bar] [get_bd_pins nand_3_6/out_n] [get_bd_pins nand_3_7/in1]
+  connect_bd_net -net nand_3_7_out_n [get_bd_pins Q] [get_bd_pins nand_3_6/in2] [get_bd_pins nand_3_7/out_n]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins nand_3_0/in2] [get_bd_pins not_1/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: DFF
+proc create_hier_cell_DFF_1 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_DFF_1() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I D
+  create_bd_pin -dir O -from 0 -to 0 Q
+  create_bd_pin -dir O -from 0 -to 0 Q_bar
+  create_bd_pin -dir I clear_bar
+  create_bd_pin -dir I clock
+
+  # Create instance: nand_3_0
+  create_hier_cell_nand_3_0_1 $hier_obj nand_3_0
+
+  # Create instance: nand_3_1
+  create_hier_cell_nand_3_1_1 $hier_obj nand_3_1
+
+  # Create instance: nand_3_2
+  create_hier_cell_nand_3_2_1 $hier_obj nand_3_2
+
+  # Create instance: nand_3_3
+  create_hier_cell_nand_3_3_1 $hier_obj nand_3_3
+
+  # Create instance: nand_3_4
+  create_hier_cell_nand_3_4_1 $hier_obj nand_3_4
+
+  # Create instance: nand_3_5
+  create_hier_cell_nand_3_5_1 $hier_obj nand_3_5
+
+  # Create instance: nand_3_6
+  create_hier_cell_nand_3_6_1 $hier_obj nand_3_6
+
+  # Create instance: nand_3_7
+  create_hier_cell_nand_3_7_1 $hier_obj nand_3_7
+
+  # Create instance: not_0, and set properties
+  set not_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 not_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $not_0
+
+  # Create instance: not_1, and set properties
+  set not_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 not_1 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $not_1
+
+  # Create port connections
+  connect_bd_net -net D_1 [get_bd_pins D] [get_bd_pins nand_3_1/in2]
+  connect_bd_net -net clear_bar_1 [get_bd_pins clear_bar] [get_bd_pins nand_3_0/in1] [get_bd_pins nand_3_3/in1]
+  connect_bd_net -net clock_1 [get_bd_pins clock] [get_bd_pins not_1/Op1]
+  connect_bd_net -net in1_1 [get_bd_pins nand_3_1/in1] [get_bd_pins nand_3_4/out_n] [get_bd_pins nand_3_6/in1]
+  connect_bd_net -net in1_2 [get_bd_pins nand_3_0/out_n] [get_bd_pins nand_3_4/in1] [get_bd_pins nand_3_5/in1]
+  connect_bd_net -net in2_1 [get_bd_pins nand_3_2/in2] [get_bd_pins nand_3_5/out_n] [get_bd_pins nand_3_7/in2]
+  connect_bd_net -net in2_2 [get_bd_pins nand_3_5/in2] [get_bd_pins not_0/Res]
+  connect_bd_net -net nand_3_1_n_out [get_bd_pins nand_3_1/n_out] [get_bd_pins nand_3_2/in1]
+  connect_bd_net -net nand_3_2_out_n [get_bd_pins nand_3_2/out_n] [get_bd_pins nand_3_3/in2]
+  connect_bd_net -net nand_3_3_out_n [get_bd_pins nand_3_3/out_n] [get_bd_pins nand_3_4/in2] [get_bd_pins not_0/Op1]
+  connect_bd_net -net nand_3_6_out_n [get_bd_pins Q_bar] [get_bd_pins nand_3_6/out_n] [get_bd_pins nand_3_7/in1]
+  connect_bd_net -net nand_3_7_out_n [get_bd_pins Q] [get_bd_pins nand_3_6/in2] [get_bd_pins nand_3_7/out_n]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins nand_3_0/in2] [get_bd_pins not_1/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: DFF
 proc create_hier_cell_DFF { parentCell nameHier } {
 
   variable script_folder
@@ -759,13 +2673,286 @@ proc create_hier_cell_DFF { parentCell nameHier } {
   current_bd_instance $oldCurInst
 }
 
-# Hierarchical cell: JK_FF
-proc create_hier_cell_JK_FF { parentCell nameHier } {
+# Hierarchical cell: JK_FF_3
+proc create_hier_cell_JK_FF_3 { parentCell nameHier } {
 
   variable script_folder
 
   if { $parentCell eq "" || $nameHier eq "" } {
-     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_JK_FF() - Empty argument(s)!"}
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_JK_FF_3() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I J
+  create_bd_pin -dir I K
+  create_bd_pin -dir O -from 0 -to 0 Q
+  create_bd_pin -dir O -from 0 -to 0 Q_bar
+  create_bd_pin -dir I clear_bar
+  create_bd_pin -dir I clock
+
+  # Create instance: DFF
+  create_hier_cell_DFF_3 $hier_obj DFF
+
+  # Create instance: and_0, and set properties
+  set and_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_0 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_0
+
+  # Create instance: and_1, and set properties
+  set and_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_1 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_1
+
+  # Create instance: or_0, and set properties
+  set or_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 or_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {or} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_orgate.png} \
+ ] $or_0
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_0
+
+  # Create port connections
+  connect_bd_net -net DFF_Q [get_bd_pins Q] [get_bd_pins DFF/Q] [get_bd_pins and_1/Op2]
+  connect_bd_net -net DFF_Q_bar [get_bd_pins Q_bar] [get_bd_pins DFF/Q_bar] [get_bd_pins and_0/Op2]
+  connect_bd_net -net J_1 [get_bd_pins J] [get_bd_pins and_0/Op1]
+  connect_bd_net -net K_1 [get_bd_pins K] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net and_0_Res [get_bd_pins and_0/Res] [get_bd_pins or_0/Op1]
+  connect_bd_net -net and_1_Res [get_bd_pins and_1/Res] [get_bd_pins or_0/Op2]
+  connect_bd_net -net clear_bar_1 [get_bd_pins clear_bar] [get_bd_pins DFF/clear_bar]
+  connect_bd_net -net clock_1 [get_bd_pins clock] [get_bd_pins DFF/clock]
+  connect_bd_net -net or_0_Res [get_bd_pins DFF/D] [get_bd_pins or_0/Res]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins and_1/Op1] [get_bd_pins util_vector_logic_0/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: JK_FF_2
+proc create_hier_cell_JK_FF_2 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_JK_FF_2() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I J
+  create_bd_pin -dir I K
+  create_bd_pin -dir O -from 0 -to 0 Q
+  create_bd_pin -dir O -from 0 -to 0 Q_bar
+  create_bd_pin -dir I clear_bar
+  create_bd_pin -dir I clock
+
+  # Create instance: DFF
+  create_hier_cell_DFF_2 $hier_obj DFF
+
+  # Create instance: and_0, and set properties
+  set and_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_0 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_0
+
+  # Create instance: and_1, and set properties
+  set and_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_1 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_1
+
+  # Create instance: or_0, and set properties
+  set or_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 or_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {or} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_orgate.png} \
+ ] $or_0
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_0
+
+  # Create port connections
+  connect_bd_net -net DFF_Q [get_bd_pins Q] [get_bd_pins DFF/Q] [get_bd_pins and_1/Op2]
+  connect_bd_net -net DFF_Q_bar [get_bd_pins Q_bar] [get_bd_pins DFF/Q_bar] [get_bd_pins and_0/Op2]
+  connect_bd_net -net J_1 [get_bd_pins J] [get_bd_pins and_0/Op1]
+  connect_bd_net -net K_1 [get_bd_pins K] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net and_0_Res [get_bd_pins and_0/Res] [get_bd_pins or_0/Op1]
+  connect_bd_net -net and_1_Res [get_bd_pins and_1/Res] [get_bd_pins or_0/Op2]
+  connect_bd_net -net clear_bar_1 [get_bd_pins clear_bar] [get_bd_pins DFF/clear_bar]
+  connect_bd_net -net clock_1 [get_bd_pins clock] [get_bd_pins DFF/clock]
+  connect_bd_net -net or_0_Res [get_bd_pins DFF/D] [get_bd_pins or_0/Res]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins and_1/Op1] [get_bd_pins util_vector_logic_0/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: JK_FF_1
+proc create_hier_cell_JK_FF_1 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_JK_FF_1() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I J
+  create_bd_pin -dir I K
+  create_bd_pin -dir O -from 0 -to 0 Q
+  create_bd_pin -dir O -from 0 -to 0 Q_bar
+  create_bd_pin -dir I clear_bar
+  create_bd_pin -dir I clock
+
+  # Create instance: DFF
+  create_hier_cell_DFF_1 $hier_obj DFF
+
+  # Create instance: and_0, and set properties
+  set and_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_0 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_0
+
+  # Create instance: and_1, and set properties
+  set and_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_1 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_1
+
+  # Create instance: or_0, and set properties
+  set or_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 or_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {or} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_orgate.png} \
+ ] $or_0
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_0
+
+  # Create port connections
+  connect_bd_net -net DFF_Q [get_bd_pins Q] [get_bd_pins DFF/Q] [get_bd_pins and_1/Op2]
+  connect_bd_net -net DFF_Q_bar [get_bd_pins Q_bar] [get_bd_pins DFF/Q_bar] [get_bd_pins and_0/Op2]
+  connect_bd_net -net J_1 [get_bd_pins J] [get_bd_pins and_0/Op1]
+  connect_bd_net -net K_1 [get_bd_pins K] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net and_0_Res [get_bd_pins and_0/Res] [get_bd_pins or_0/Op1]
+  connect_bd_net -net and_1_Res [get_bd_pins and_1/Res] [get_bd_pins or_0/Op2]
+  connect_bd_net -net clear_bar_1 [get_bd_pins clear_bar] [get_bd_pins DFF/clear_bar]
+  connect_bd_net -net clock_1 [get_bd_pins clock] [get_bd_pins DFF/clock]
+  connect_bd_net -net or_0_Res [get_bd_pins DFF/D] [get_bd_pins or_0/Res]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins and_1/Op1] [get_bd_pins util_vector_logic_0/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+# Hierarchical cell: JK_FF_0
+proc create_hier_cell_JK_FF_0 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_JK_FF_0() - Empty argument(s)!"}
      return
   }
 
@@ -886,21 +3073,133 @@ proc create_root_design { parentCell } {
   # Create interface ports
 
   # Create ports
-  set D [ create_bd_port -dir I D ]
-  set Q [ create_bd_port -dir O -from 0 -to 0 Q ]
-  set Q_bar [ create_bd_port -dir O -from 0 -to 0 Q_bar ]
+  set Q0 [ create_bd_port -dir O -from 0 -to 0 Q0 ]
+  set Q1 [ create_bd_port -dir O -from 0 -to 0 Q1 ]
+  set Q2 [ create_bd_port -dir O -from 0 -to 0 Q2 ]
+  set Q3 [ create_bd_port -dir O -from 0 -to 0 Q3 ]
+  set U [ create_bd_port -dir I U ]
   set clear_bar [ create_bd_port -dir I clear_bar ]
   set clock [ create_bd_port -dir I clock ]
 
-  # Create instance: JK_FF
-  create_hier_cell_JK_FF [current_bd_instance .] JK_FF
+  # Create instance: JK_FF_0
+  create_hier_cell_JK_FF_0 [current_bd_instance .] JK_FF_0
+
+  # Create instance: JK_FF_1
+  create_hier_cell_JK_FF_1 [current_bd_instance .] JK_FF_1
+
+  # Create instance: JK_FF_2
+  create_hier_cell_JK_FF_2 [current_bd_instance .] JK_FF_2
+
+  # Create instance: JK_FF_3
+  create_hier_cell_JK_FF_3 [current_bd_instance .] JK_FF_3
+
+  # Create instance: and_0, and set properties
+  set and_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_0 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_0
+
+  # Create instance: and_1, and set properties
+  set and_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_1 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_1
+
+  # Create instance: and_2, and set properties
+  set and_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_2 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_2
+
+  # Create instance: and_3, and set properties
+  set and_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_3 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_3
+
+  # Create instance: and_4, and set properties
+  set and_4 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_4 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_4
+
+  # Create instance: and_5, and set properties
+  set and_5 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_5 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_5
+
+  # Create instance: not_0, and set properties
+  set not_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 not_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $not_0
+
+  # Create instance: not_1, and set properties
+  set not_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 not_1 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $not_1
+
+  # Create instance: or_0, and set properties
+  set or_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 or_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {or} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_orgate.png} \
+ ] $or_0
+
+  # Create instance: or_1, and set properties
+  set or_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 or_1 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {or} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_orgate.png} \
+ ] $or_1
+
+  # Create instance: or_2, and set properties
+  set or_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 or_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {or} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_orgate.png} \
+ ] $or_2
+
+  # Create instance: xor_0, and set properties
+  set xor_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 xor_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {xor} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_xorgate.png} \
+ ] $xor_0
 
   # Create port connections
-  connect_bd_net -net D_1 [get_bd_ports D] [get_bd_pins JK_FF/J] [get_bd_pins JK_FF/K]
-  connect_bd_net -net JK_FF_Q [get_bd_ports Q] [get_bd_pins JK_FF/Q]
-  connect_bd_net -net JK_FF_Q_bar [get_bd_ports Q_bar] [get_bd_pins JK_FF/Q_bar]
-  connect_bd_net -net clear_bar_1 [get_bd_ports clear_bar] [get_bd_pins JK_FF/clear_bar]
-  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins JK_FF/clock]
+  connect_bd_net -net JK_FF_0_Q [get_bd_ports Q0] [get_bd_pins JK_FF_0/Q] [get_bd_pins and_0/Op2]
+  connect_bd_net -net JK_FF_0_Q_bar [get_bd_pins JK_FF_0/Q_bar] [get_bd_pins and_1/Op1]
+  connect_bd_net -net JK_FF_1_Q [get_bd_ports Q1] [get_bd_pins JK_FF_1/Q] [get_bd_pins and_2/Op2]
+  connect_bd_net -net JK_FF_1_Q_bar [get_bd_pins JK_FF_1/Q_bar] [get_bd_pins and_3/Op1]
+  connect_bd_net -net JK_FF_2_Q [get_bd_ports Q2] [get_bd_pins JK_FF_2/Q] [get_bd_pins and_4/Op2]
+  connect_bd_net -net JK_FF_2_Q_bar [get_bd_pins JK_FF_2/Q_bar] [get_bd_pins and_5/Op1]
+  connect_bd_net -net JK_FF_3_Q [get_bd_ports Q3] [get_bd_pins JK_FF_3/Q]
+  connect_bd_net -net U_1 [get_bd_ports U] [get_bd_pins and_0/Op1] [get_bd_pins not_1/Op1]
+  connect_bd_net -net and_0_Res [get_bd_pins and_0/Res] [get_bd_pins and_2/Op1] [get_bd_pins or_0/Op1]
+  connect_bd_net -net and_1_Res [get_bd_pins and_1/Res] [get_bd_pins and_3/Op2] [get_bd_pins or_0/Op2]
+  connect_bd_net -net and_2_Res [get_bd_pins and_2/Res] [get_bd_pins and_4/Op1] [get_bd_pins or_1/Op1]
+  connect_bd_net -net and_3_Res [get_bd_pins and_3/Res] [get_bd_pins and_5/Op2] [get_bd_pins or_1/Op2]
+  connect_bd_net -net and_4_Res [get_bd_pins and_4/Res] [get_bd_pins or_2/Op1]
+  connect_bd_net -net and_5_Res [get_bd_pins and_5/Res] [get_bd_pins or_2/Op2]
+  connect_bd_net -net clear_bar_1 [get_bd_ports clear_bar] [get_bd_pins JK_FF_0/clear_bar] [get_bd_pins JK_FF_1/clear_bar] [get_bd_pins JK_FF_2/clear_bar] [get_bd_pins JK_FF_3/clear_bar] [get_bd_pins xor_0/Op1] [get_bd_pins xor_0/Op2]
+  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins JK_FF_0/clock] [get_bd_pins JK_FF_1/clock] [get_bd_pins JK_FF_2/clock] [get_bd_pins JK_FF_3/clock]
+  connect_bd_net -net not_0_Res [get_bd_pins JK_FF_0/J] [get_bd_pins JK_FF_0/K] [get_bd_pins not_0/Res]
+  connect_bd_net -net not_1_Res [get_bd_pins and_1/Op2] [get_bd_pins not_1/Res]
+  connect_bd_net -net or_0_Res [get_bd_pins JK_FF_1/J] [get_bd_pins JK_FF_1/K] [get_bd_pins or_0/Res]
+  connect_bd_net -net or_1_Res [get_bd_pins JK_FF_2/J] [get_bd_pins JK_FF_2/K] [get_bd_pins or_1/Res]
+  connect_bd_net -net or_2_Res [get_bd_pins JK_FF_3/J] [get_bd_pins JK_FF_3/K] [get_bd_pins or_2/Res]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins not_0/Op1] [get_bd_pins xor_0/Res]
 
   # Create address segments
 

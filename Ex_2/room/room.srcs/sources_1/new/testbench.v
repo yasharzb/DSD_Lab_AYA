@@ -23,27 +23,23 @@
 module testbench(
     );
     
-    reg clock = 0,clear_bar = 1, D;
-    wire out, out_bar;
+    reg clock = 0,clear_bar = 1, U;
+    wire Q0, Q1, Q2, Q3;
     
-    counter_4 c4(.clear_bar(clear_bar), .D(D), .clock(clock), .Q(out), .Q_bar(out_bar));
+    counter_4 c4(.clear_bar(clear_bar), .U(U), .clock(clock), .Q0(Q0), .Q1(Q1), .Q2(Q2), .Q3(Q3));
     
     initial begin 
     clock = 0;
     clear_bar = 0;
-    forever #5 clock = ~clock; 
+    forever #2 clock = ~clock; 
     end
     
     initial
     begin
-        D = 1;
-        #1
+        U = 1;
+        #2
         clear_bar = 1;
-        #11
-        clear_bar = 0;
-        #1
-        clear_bar = 1;
-        
+        #30;
     end
         
 endmodule

@@ -1,34 +1,55 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Oct 26 10:39:39 2020" VIVADOVERSION="2019.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Oct 26 11:42:33 2020" VIVADOVERSION="2019.1">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="counter_4" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT DIR="I" NAME="clear_bar" SIGIS="undef" SIGNAME="External_Ports_clear_bar">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="JK_FF_DFF_nand_3_0_util_vector_logic_0" PORT="Op1"/>
-        <CONNECTION INSTANCE="JK_FF_DFF_nand_3_3_util_vector_logic_0" PORT="Op1"/>
+        <CONNECTION INSTANCE="xor_0" PORT="Op2"/>
+        <CONNECTION INSTANCE="xor_0" PORT="Op1"/>
+        <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_0_util_vector_logic_0" PORT="Op1"/>
+        <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_3_util_vector_logic_0" PORT="Op1"/>
+        <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_0_util_vector_logic_0" PORT="Op1"/>
+        <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_3_util_vector_logic_0" PORT="Op1"/>
+        <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_0_util_vector_logic_0" PORT="Op1"/>
+        <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_3_util_vector_logic_0" PORT="Op1"/>
+        <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_0_util_vector_logic_0" PORT="Op1"/>
+        <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_3_util_vector_logic_0" PORT="Op1"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="clock" SIGIS="undef" SIGNAME="External_Ports_clock">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="JK_FF_DFF_not_1" PORT="Op1"/>
+        <CONNECTION INSTANCE="JK_FF_0_DFF_not_1" PORT="Op1"/>
+        <CONNECTION INSTANCE="JK_FF_1_DFF_not_1" PORT="Op1"/>
+        <CONNECTION INSTANCE="JK_FF_2_DFF_not_1" PORT="Op1"/>
+        <CONNECTION INSTANCE="JK_FF_3_DFF_not_1" PORT="Op1"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="D" SIGIS="undef" SIGNAME="External_Ports_D">
+    <PORT DIR="I" NAME="U" SIGIS="undef" SIGNAME="External_Ports_U">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="JK_FF_and_0" PORT="Op1"/>
-        <CONNECTION INSTANCE="JK_FF_util_vector_logic_0" PORT="Op1"/>
+        <CONNECTION INSTANCE="and_0" PORT="Op1"/>
+        <CONNECTION INSTANCE="not_1" PORT="Op1"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="0" NAME="Q_bar" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_6_util_vector_logic_2_Res">
+    <PORT DIR="O" LEFT="0" NAME="Q0" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_7_util_vector_logic_2_Res">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="JK_FF_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
+        <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="0" NAME="Q" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_7_util_vector_logic_2_Res">
+    <PORT DIR="O" LEFT="0" NAME="Q1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_7_util_vector_logic_2_Res">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="JK_FF_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+        <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="Q2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_7_util_vector_logic_2_Res">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="Q3" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_7_util_vector_logic_2_Res">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -36,7 +57,7 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_0/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_0_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_0/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_0_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="and"/>
@@ -51,20 +72,20 @@
             <CONNECTION INSTANCE="External_Ports" PORT="clear_bar"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_not_1_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_not_1_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_not_1" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_not_1" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_0_util_vector_logic_0_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_0_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_0_util_vector_logic_2" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_0_util_vector_logic_2" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_0/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_0_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_0/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_0_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -74,21 +95,21 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_0_util_vector_logic_0_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_0_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_0_util_vector_logic_0" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_0_util_vector_logic_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_0_util_vector_logic_2_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_0_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_4_util_vector_logic_0" PORT="Op1"/>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_5_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_4_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_5_util_vector_logic_0" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_1/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_1_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_1/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_1_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="and"/>
@@ -98,25 +119,25 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_4_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_4_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_4_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_4_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_or_0_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_or_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_or_0" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_or_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_1_util_vector_logic_0_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_1_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_1_util_vector_logic_2" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_1_util_vector_logic_2" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_1/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_1_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_1/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_1_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -126,20 +147,20 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_1_util_vector_logic_0_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_1_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_1_util_vector_logic_0" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_1_util_vector_logic_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_1_util_vector_logic_2_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_1_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_2_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_2_util_vector_logic_0" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_2/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_2_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_2/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_2_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="and"/>
@@ -149,25 +170,25 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_1_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_1_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_1_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_1_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_5_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_5_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_5_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_5_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_2_util_vector_logic_0_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_2_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_2_util_vector_logic_2" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_2_util_vector_logic_2" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_2/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_2_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_2/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_2_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -177,20 +198,20 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_2_util_vector_logic_0_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_2_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_2_util_vector_logic_0" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_2_util_vector_logic_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_2_util_vector_logic_2_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_2_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_3_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_3_util_vector_logic_0" PORT="Op2"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_3/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_3_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_3/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_3_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="and"/>
@@ -205,20 +226,20 @@
             <CONNECTION INSTANCE="External_Ports" PORT="clear_bar"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_2_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_2_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_2_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_2_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_3_util_vector_logic_0_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_3_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_3_util_vector_logic_2" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_3_util_vector_logic_2" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_3/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_3_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_3/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_3_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -228,21 +249,21 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_3_util_vector_logic_0_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_3_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_3_util_vector_logic_0" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_3_util_vector_logic_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_3_util_vector_logic_2_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_3_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_not_0" PORT="Op1"/>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_4_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_not_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_4_util_vector_logic_0" PORT="Op2"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_4/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_4_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_4/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_4_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="and"/>
@@ -252,25 +273,25 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_0_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_0_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_0_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_0_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_3_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_3_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_3_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_3_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_4_util_vector_logic_0_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_4_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_4_util_vector_logic_2" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_4_util_vector_logic_2" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_4/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_4_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_4/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_4_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -280,21 +301,21 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_4_util_vector_logic_0_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_4_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_4_util_vector_logic_0" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_4_util_vector_logic_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_4_util_vector_logic_2_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_4_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_6_util_vector_logic_0" PORT="Op1"/>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_1_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_6_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_1_util_vector_logic_0" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_5/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_5_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_5/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_5_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="and"/>
@@ -304,25 +325,25 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_0_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_0_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_0_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_0_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_not_0_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_not_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_not_0" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_not_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_5_util_vector_logic_0_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_5_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_5_util_vector_logic_2" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_5_util_vector_logic_2" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_5/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_5_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_5/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_5_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -332,21 +353,21 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_5_util_vector_logic_0_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_5_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_5_util_vector_logic_0" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_5_util_vector_logic_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_5_util_vector_logic_2_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_5_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_7_util_vector_logic_0" PORT="Op2"/>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_2_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_7_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_2_util_vector_logic_0" PORT="Op2"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_6/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_6_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_6/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_6_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="and"/>
@@ -356,25 +377,25 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_4_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_4_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_4_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_4_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_7_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_7_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_6_util_vector_logic_0_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_6_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_6_util_vector_logic_2" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_6_util_vector_logic_2" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_6/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_6_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_6/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_6_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -384,22 +405,22 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_6_util_vector_logic_0_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_6_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_6_util_vector_logic_0" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_6_util_vector_logic_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_6_util_vector_logic_2_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_6_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_7_util_vector_logic_0" PORT="Op1"/>
-            <CONNECTION INSTANCE="JK_FF_and_0" PORT="Op2"/>
-            <CONNECTION INSTANCE="External_Ports" PORT="Q_bar"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_7_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_and_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="and_1" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_7/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_7_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_7/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_7_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="and"/>
@@ -409,25 +430,25 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_6_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_6_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_5_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_5_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_5_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_5_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_7_util_vector_logic_0_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_7_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_7_util_vector_logic_2" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_7_util_vector_logic_2" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/nand_3_7/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_DFF_nand_3_7_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/nand_3_7/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_nand_3_7_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -437,22 +458,23 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_7_util_vector_logic_0_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_7_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_7_util_vector_logic_0" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_7_util_vector_logic_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_7_util_vector_logic_2_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_7_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_6_util_vector_logic_0" PORT="Op2"/>
-            <CONNECTION INSTANCE="JK_FF_and_1" PORT="Op2"/>
-            <CONNECTION INSTANCE="External_Ports" PORT="Q"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_6_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_0_and_1" PORT="Op2"/>
+            <CONNECTION INSTANCE="and_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q0"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/not_0" HWVERSION="2.0" INSTANCE="JK_FF_DFF_not_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/not_0" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_not_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -462,20 +484,20 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_3_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_3_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_3_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_3_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_not_0_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_not_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_5_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_5_util_vector_logic_0" PORT="Op2"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/DFF/not_1" HWVERSION="2.0" INSTANCE="JK_FF_DFF_not_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/DFF/not_1" HWVERSION="2.0" INSTANCE="JK_FF_0_DFF_not_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -490,15 +512,15 @@
             <CONNECTION INSTANCE="External_Ports" PORT="clock"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_not_1_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_not_1_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_0_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_0_util_vector_logic_0" PORT="Op2"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/and_0" HWVERSION="2.0" INSTANCE="JK_FF_and_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/and_0" HWVERSION="2.0" INSTANCE="JK_FF_0_and_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="and"/>
@@ -508,25 +530,25 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_D">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="not_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="D"/>
+            <CONNECTION INSTANCE="not_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_6_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_6_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_and_0_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_and_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_or_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_or_0" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/and_1" HWVERSION="2.0" INSTANCE="JK_FF_and_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/and_1" HWVERSION="2.0" INSTANCE="JK_FF_0_and_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="and"/>
@@ -536,25 +558,25 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_util_vector_logic_0_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_util_vector_logic_0" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_util_vector_logic_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_DFF_nand_3_7_util_vector_logic_2_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_7_util_vector_logic_2_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_and_1_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_and_1_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_or_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_0_or_0" PORT="Op2"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/or_0" HWVERSION="2.0" INSTANCE="JK_FF_or_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/or_0" HWVERSION="2.0" INSTANCE="JK_FF_0_or_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="or"/>
@@ -564,25 +586,25 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_and_0_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_and_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_and_0" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_and_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_and_1_Res">
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_and_1_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_and_1" PORT="Res"/>
+            <CONNECTION INSTANCE="JK_FF_0_and_1" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_or_0_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_or_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_DFF_nand_3_1_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_1_util_vector_logic_0" PORT="Op2"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/JK_FF/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_0/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_0_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -592,14 +614,2056 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_D">
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="not_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="D"/>
+            <CONNECTION INSTANCE="not_0" PORT="Res"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_util_vector_logic_0_Res">
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_util_vector_logic_0_Res">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JK_FF_and_1" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_and_1" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_0/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_0_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_44"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_clear_bar">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_bar"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_not_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_not_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_0_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_0_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_0/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_0_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_38"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_0_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_0_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_0_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_4_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_5_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_1/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_1_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_45"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_4_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_4_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_or_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_or_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_1_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_1_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_1/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_1_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_39"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_1_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_1_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_1_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_2_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_2/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_2_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_46"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_1_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_1_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_5_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_5_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_2_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_2_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_2/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_2_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_40"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_2_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_2_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_2_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_3_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_3/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_3_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_47"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_clear_bar">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_bar"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_2_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_2_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_3_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_3_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_3/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_3_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_41"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_3_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_3_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_3_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_not_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_4_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_4/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_4_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_48"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_0_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_0_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_3_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_3_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_4_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_4_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_4/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_4_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_42"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_4_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_4_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_4_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_6_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_1_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_5/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_5_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_49"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_0_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_0_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_not_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_not_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_5_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_5_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_5/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_5_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_43"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_5_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_5_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_5_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_7_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_2_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_6/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_6_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_50"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_4_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_4_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_7_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_6_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_6_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_6/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_6_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_44"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_6_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_6_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_6_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_7_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_1_and_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="and_3" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_7/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_7_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_51"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_6_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_5_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_5_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_7_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_7_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/nand_3_7/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_nand_3_7_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_45"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_7_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_7_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_7_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_6_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_1_and_1" PORT="Op2"/>
+            <CONNECTION INSTANCE="and_2" PORT="Op2"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/not_0" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_not_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_not_0_2"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_3_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_3_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_not_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_5_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/DFF/not_1" HWVERSION="2.0" INSTANCE="JK_FF_1_DFF_not_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_not_1_2"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_not_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_0_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/and_0" HWVERSION="2.0" INSTANCE="JK_FF_1_and_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_and_0_1"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="or_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="or_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_6_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_and_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_or_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/and_1" HWVERSION="2.0" INSTANCE="JK_FF_1_and_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_and_1_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_7_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_and_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_or_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/or_0" HWVERSION="2.0" INSTANCE="JK_FF_1_or_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="or"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_or_0_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_orgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_and_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_and_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_and_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_and_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_or_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_1_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_1/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_1_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_52"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="or_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="or_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_and_1" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_0/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_0_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_53"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_clear_bar">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_bar"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_not_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_not_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_0_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_0_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_0/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_0_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_46"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_0_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_0_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_0_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_4_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_5_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_1/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_1_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_54"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_4_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_4_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_or_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_or_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_1_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_1_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_1/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_1_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_47"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_1_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_1_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_1_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_2_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_2/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_2_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_55"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_1_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_1_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_5_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_5_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_2_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_2_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_2/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_2_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_48"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_2_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_2_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_2_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_3_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_3/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_3_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_56"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_clear_bar">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_bar"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_2_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_2_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_3_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_3_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_3/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_3_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_49"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_3_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_3_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_3_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_not_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_4_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_4/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_4_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_57"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_0_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_0_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_3_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_3_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_4_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_4_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_4/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_4_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_50"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_4_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_4_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_4_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_6_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_1_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_5/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_5_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_58"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_0_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_0_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_not_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_not_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_5_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_5_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_5/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_5_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_51"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_5_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_5_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_5_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_7_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_2_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_6/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_6_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_59"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_4_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_4_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_7_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_6_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_6_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_6/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_6_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_52"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_6_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_6_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_6_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_7_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_2_and_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="and_5" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_7/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_7_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_60"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_6_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_5_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_5_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_7_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_7_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/nand_3_7/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_nand_3_7_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_53"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_7_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_7_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_7_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_6_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_2_and_1" PORT="Op2"/>
+            <CONNECTION INSTANCE="and_4" PORT="Op2"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/not_0" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_not_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_not_0_3"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_3_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_3_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_not_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_5_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/DFF/not_1" HWVERSION="2.0" INSTANCE="JK_FF_2_DFF_not_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_not_1_3"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_not_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_0_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/and_0" HWVERSION="2.0" INSTANCE="JK_FF_2_and_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_and_0_2"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="or_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="or_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_6_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_and_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_or_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/and_1" HWVERSION="2.0" INSTANCE="JK_FF_2_and_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_and_1_1"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_7_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_and_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_or_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/or_0" HWVERSION="2.0" INSTANCE="JK_FF_2_or_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="or"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_or_0_1"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_orgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_and_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_and_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_and_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_and_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_or_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_1_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_2/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_2_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_61"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="or_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="or_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_and_1" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_0/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_0_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_62"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_clear_bar">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_bar"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_not_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_not_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_0_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_0_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_0/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_0_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_54"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_0_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_0_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_0_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_4_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_5_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_1/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_1_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_63"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_4_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_4_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_or_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_or_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_1_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_1_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_1/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_1_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_55"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_1_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_1_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_1_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_2_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_2/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_2_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_64"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_1_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_1_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_5_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_5_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_2_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_2_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_2/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_2_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_56"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_2_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_2_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_2_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_3_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_3/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_3_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_65"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_clear_bar">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_bar"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_2_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_2_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_3_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_3_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_3/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_3_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_57"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_3_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_3_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_3_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_not_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_4_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_4/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_4_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_66"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_0_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_0_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_3_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_3_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_4_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_4_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_4/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_4_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_58"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_4_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_4_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_4_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_6_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_1_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_5/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_5_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_67"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_0_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_0_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_not_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_not_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_5_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_5_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_5/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_5_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_59"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_5_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_5_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_5_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_7_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_2_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_6/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_6_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_68"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_4_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_4_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_7_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_6_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_6_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_6/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_6_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_60"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_6_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_6_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_6_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_7_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_3_and_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_7/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_7_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_69"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_6_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_5_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_5_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_7_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_7_util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/nand_3_7/util_vector_logic_2" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_nand_3_7_util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_2_61"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_7_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_7_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_7_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_6_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="JK_FF_3_and_1" PORT="Op2"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/not_0" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_not_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_not_0_4"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_3_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_3_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_not_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_5_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/DFF/not_1" HWVERSION="2.0" INSTANCE="JK_FF_3_DFF_not_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_not_1_4"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_not_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_0_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/and_0" HWVERSION="2.0" INSTANCE="JK_FF_3_and_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_and_0_3"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="or_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="or_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_6_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_and_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_or_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/and_1" HWVERSION="2.0" INSTANCE="JK_FF_3_and_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_and_1_2"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_DFF_nand_3_7_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_and_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_or_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/or_0" HWVERSION="2.0" INSTANCE="JK_FF_3_or_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="or"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_or_0_2"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_orgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_and_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_and_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_and_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_and_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_or_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_DFF_nand_3_1_util_vector_logic_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/JK_FF_3/util_vector_logic_0" HWVERSION="2.0" INSTANCE="JK_FF_3_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_70"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="or_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="or_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_3_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_and_1" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/and_0" HWVERSION="2.0" INSTANCE="and_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_72"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_U">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="U"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_7_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="and_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="or_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="and_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/and_1" HWVERSION="2.0" INSTANCE="and_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_73"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_0_DFF_nand_3_6_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_0_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="not_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="not_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="and_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="or_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="and_3" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/and_2" HWVERSION="2.0" INSTANCE="and_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_and_0_5"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="and_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="and_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_7_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="and_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="or_1" PORT="Op1"/>
+            <CONNECTION INSTANCE="and_4" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/and_3" HWVERSION="2.0" INSTANCE="and_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_and_0_6"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_1_DFF_nand_3_6_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="and_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="and_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="and_3_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="or_1" PORT="Op2"/>
+            <CONNECTION INSTANCE="and_5" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/and_4" HWVERSION="2.0" INSTANCE="and_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_and_2_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="and_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="and_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_7_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_7_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="and_4_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="or_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/and_5" HWVERSION="2.0" INSTANCE="and_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_and_2_1"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="JK_FF_2_DFF_nand_3_6_util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_DFF_nand_3_6_util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="and_3_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="and_3" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="and_5_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="or_2" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/not_0" HWVERSION="2.0" INSTANCE="not_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_1_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="xor_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="not_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_0_and_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_0_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/not_1" HWVERSION="2.0" INSTANCE="not_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_not_0_5"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_U">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="U"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="not_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="and_1" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/or_0" HWVERSION="2.0" INSTANCE="or_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="or"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_and_0_4"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_orgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="and_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="and_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="and_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="and_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="or_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_1_and_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_1_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/or_1" HWVERSION="2.0" INSTANCE="or_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="or"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_or_0_3"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_orgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="and_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="and_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="and_3_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="and_3" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="or_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_2_and_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_2_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/or_2" HWVERSION="2.0" INSTANCE="or_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="or"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_or_1_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_orgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="and_4_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="and_4" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="and_5_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="and_5" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="or_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="JK_FF_3_and_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="JK_FF_3_util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/xor_0" HWVERSION="2.0" INSTANCE="xor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="xor"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="counter_4_util_vector_logic_0_71"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_xorgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_clear_bar">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_bar"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_clear_bar">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_bar"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="xor_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="not_0" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
