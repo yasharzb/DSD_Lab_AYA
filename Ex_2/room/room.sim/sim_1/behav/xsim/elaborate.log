@@ -1,0 +1,42 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3301abe1ce94ca0958ece6be9b2defa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module util_vector_logic_v2_0_1.util_vector_logic_v2_0_1_util_ve...
+Compiling module xil_defaultlib.counter_4_util_vector_logic_0_8
+Compiling module util_vector_logic_v2_0_1.util_vector_logic_v2_0_1_util_ve...
+Compiling module xil_defaultlib.counter_4_util_vector_logic_2_7
+Compiling module xil_defaultlib.nand_3_0_imp_BWS187
+Compiling module xil_defaultlib.counter_4_util_vector_logic_0_10
+Compiling module xil_defaultlib.counter_4_util_vector_logic_2_9
+Compiling module xil_defaultlib.nand_3_1_imp_1IPMFPL
+Compiling module xil_defaultlib.counter_4_util_vector_logic_0_18
+Compiling module xil_defaultlib.counter_4_util_vector_logic_2_16
+Compiling module xil_defaultlib.nand_3_2_imp_CSGCUI
+Compiling module xil_defaultlib.counter_4_util_vector_logic_0_19
+Compiling module xil_defaultlib.counter_4_util_vector_logic_2_17
+Compiling module xil_defaultlib.nand_3_3_imp_1HSCP4K
+Compiling module xil_defaultlib.counter_4_util_vector_logic_0_20
+Compiling module xil_defaultlib.counter_4_util_vector_logic_2_18
+Compiling module xil_defaultlib.nand_3_4_imp_9PUXCD
+Compiling module xil_defaultlib.counter_4_util_vector_logic_0_21
+Compiling module xil_defaultlib.counter_4_util_vector_logic_2_19
+Compiling module xil_defaultlib.nand_3_5_imp_1KTDROZ
+Compiling module xil_defaultlib.counter_4_util_vector_logic_0_22
+Compiling module xil_defaultlib.counter_4_util_vector_logic_2_20
+Compiling module xil_defaultlib.nand_3_6_imp_B31Y0G
+Compiling module xil_defaultlib.counter_4_util_vector_logic_0_23
+Compiling module xil_defaultlib.counter_4_util_vector_logic_2_21
+Compiling module xil_defaultlib.nand_3_7_imp_1JJNXVY
+Compiling module xil_defaultlib.counter_4_util_vector_logic_0_17
+Compiling module xil_defaultlib.counter_4_util_vector_logic_0_24
+Compiling module xil_defaultlib.DFF_imp_1CF8DQ0
+Compiling module xil_defaultlib.counter_4
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

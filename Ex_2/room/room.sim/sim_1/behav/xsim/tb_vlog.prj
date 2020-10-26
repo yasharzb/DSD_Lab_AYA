@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_0_0/sim/counter_4_util_vector_logic_0_0.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_0_1/sim/counter_4_util_vector_logic_0_1.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_2_0/sim/counter_4_util_vector_logic_2_0.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_0_3/sim/counter_4_util_vector_logic_0_3.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_1_1/sim/counter_4_util_vector_logic_1_1.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_2_2/sim/counter_4_util_vector_logic_2_2.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_0_2/sim/counter_4_util_vector_logic_0_2.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_1_0/sim/counter_4_util_vector_logic_1_0.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_2_1/sim/counter_4_util_vector_logic_2_1.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_0_4/sim/counter_4_util_vector_logic_0_4.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_1_2/sim/counter_4_util_vector_logic_1_2.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_2_3/sim/counter_4_util_vector_logic_2_3.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_0_6/sim/counter_4_util_vector_logic_0_6.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_1_4/sim/counter_4_util_vector_logic_1_4.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_2_5/sim/counter_4_util_vector_logic_2_5.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_0_7/sim/counter_4_util_vector_logic_0_7.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_1_5/sim/counter_4_util_vector_logic_1_5.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_util_vector_logic_2_6/sim/counter_4_util_vector_logic_2_6.v" \
+"../../../../room.ip_user_files/bd/counter_4/sim/counter_4.v" \
+"../../../../room.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
