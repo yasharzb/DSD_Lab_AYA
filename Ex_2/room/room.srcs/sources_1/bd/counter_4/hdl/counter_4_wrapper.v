@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Mon Oct 26 09:59:43 2020
+//Date        : Mon Oct 26 10:39:37 2020
 //Host        : DESKTOP-4NPEG9F running 64-bit major release  (build 9200)
 //Command     : generate_target counter_4_wrapper.bd
 //Design      : counter_4_wrapper

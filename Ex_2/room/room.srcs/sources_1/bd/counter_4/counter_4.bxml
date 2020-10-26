@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="37">
   <CompositeFile CompositeFileTopName="counter_4" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1603693783"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1603693783"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1603693784"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1603693784"/>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1603696177"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1603696177"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1603696179"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1603696179"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\counter_4.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
@@ -18,144 +18,176 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_0_8\counter_4_util_vector_logic_0_8.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_0/util_vector_logic_0"/>
+      <File Name="ip\counter_4_util_vector_logic_0_33\counter_4_util_vector_logic_0_33.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_0/util_vector_logic_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_2_7\counter_4_util_vector_logic_2_7.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_0/util_vector_logic_2"/>
+      <File Name="ip\counter_4_util_vector_logic_2_30\counter_4_util_vector_logic_2_30.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_0/util_vector_logic_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_0_10\counter_4_util_vector_logic_0_10.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_1/util_vector_logic_0"/>
+      <File Name="ip\counter_4_util_vector_logic_0_34\counter_4_util_vector_logic_0_34.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_1/util_vector_logic_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_2_9\counter_4_util_vector_logic_2_9.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_1/util_vector_logic_2"/>
+      <File Name="ip\counter_4_util_vector_logic_2_31\counter_4_util_vector_logic_2_31.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_1/util_vector_logic_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_0_17\counter_4_util_vector_logic_0_17.xci" Type="IP">
-        <Instance HierarchyPath="DFF/not_0"/>
+      <File Name="ip\counter_4_not_0_1\counter_4_not_0_1.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/not_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_0_18\counter_4_util_vector_logic_0_18.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_2/util_vector_logic_0"/>
+      <File Name="ip\counter_4_util_vector_logic_0_35\counter_4_util_vector_logic_0_35.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_2/util_vector_logic_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_2_16\counter_4_util_vector_logic_2_16.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_2/util_vector_logic_2"/>
+      <File Name="ip\counter_4_util_vector_logic_2_32\counter_4_util_vector_logic_2_32.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_2/util_vector_logic_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_0_19\counter_4_util_vector_logic_0_19.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_3/util_vector_logic_0"/>
+      <File Name="ip\counter_4_util_vector_logic_0_36\counter_4_util_vector_logic_0_36.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_3/util_vector_logic_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_2_17\counter_4_util_vector_logic_2_17.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_3/util_vector_logic_2"/>
+      <File Name="ip\counter_4_util_vector_logic_2_33\counter_4_util_vector_logic_2_33.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_3/util_vector_logic_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_0_20\counter_4_util_vector_logic_0_20.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_4/util_vector_logic_0"/>
+      <File Name="ip\counter_4_util_vector_logic_0_37\counter_4_util_vector_logic_0_37.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_4/util_vector_logic_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_2_18\counter_4_util_vector_logic_2_18.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_4/util_vector_logic_2"/>
+      <File Name="ip\counter_4_util_vector_logic_2_34\counter_4_util_vector_logic_2_34.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_4/util_vector_logic_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_0_21\counter_4_util_vector_logic_0_21.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_5/util_vector_logic_0"/>
+      <File Name="ip\counter_4_util_vector_logic_0_38\counter_4_util_vector_logic_0_38.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_5/util_vector_logic_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_2_19\counter_4_util_vector_logic_2_19.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_5/util_vector_logic_2"/>
+      <File Name="ip\counter_4_util_vector_logic_2_35\counter_4_util_vector_logic_2_35.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_5/util_vector_logic_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_0_22\counter_4_util_vector_logic_0_22.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_6/util_vector_logic_0"/>
+      <File Name="ip\counter_4_util_vector_logic_0_39\counter_4_util_vector_logic_0_39.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_6/util_vector_logic_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_2_20\counter_4_util_vector_logic_2_20.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_6/util_vector_logic_2"/>
+      <File Name="ip\counter_4_util_vector_logic_2_36\counter_4_util_vector_logic_2_36.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_6/util_vector_logic_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_0_23\counter_4_util_vector_logic_0_23.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_7/util_vector_logic_0"/>
+      <File Name="ip\counter_4_util_vector_logic_0_40\counter_4_util_vector_logic_0_40.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_7/util_vector_logic_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_2_21\counter_4_util_vector_logic_2_21.xci" Type="IP">
-        <Instance HierarchyPath="DFF/nand_3_7/util_vector_logic_2"/>
+      <File Name="ip\counter_4_util_vector_logic_2_37\counter_4_util_vector_logic_2_37.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/nand_3_7/util_vector_logic_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_4_util_vector_logic_0_24\counter_4_util_vector_logic_0_24.xci" Type="IP">
-        <Instance HierarchyPath="DFF/not_1"/>
+      <File Name="ip\counter_4_not_1_1\counter_4_not_1_1.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/DFF/not_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\counter_4_util_vector_logic_0_41\counter_4_util_vector_logic_0_41.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/and_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\counter_4_util_vector_logic_0_42\counter_4_util_vector_logic_0_42.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/or_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\counter_4_util_vector_logic_0_43\counter_4_util_vector_logic_0_43.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/util_vector_logic_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\counter_4_and_0_0\counter_4_and_0_0.xci" Type="IP">
+        <Instance HierarchyPath="JK_FF/and_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

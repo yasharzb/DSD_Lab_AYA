@@ -30,19 +30,20 @@ module testbench(
     
     initial begin 
     clock = 0;
+    clear_bar = 0;
     forever #5 clock = ~clock; 
     end
     
     initial
     begin
-        D = 0;
-        #9
-      //  clear_bar = 1;
         D = 1;
-        #7
-        D = 1;
-        #8 
-        D = 0;
+        #1
+        clear_bar = 1;
+        #11
+        clear_bar = 0;
+        #1
+        clear_bar = 1;
+        
     end
         
 endmodule

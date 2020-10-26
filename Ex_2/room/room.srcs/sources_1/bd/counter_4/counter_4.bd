@@ -9,41 +9,47 @@
       "validated": "true"
     },
     "design_tree": {
-      "DFF": {
-        "nand_3_0": {
-          "util_vector_logic_0": "",
-          "util_vector_logic_2": ""
+      "JK_FF": {
+        "DFF": {
+          "nand_3_0": {
+            "util_vector_logic_0": "",
+            "util_vector_logic_2": ""
+          },
+          "nand_3_1": {
+            "util_vector_logic_0": "",
+            "util_vector_logic_2": ""
+          },
+          "not_0": "",
+          "nand_3_2": {
+            "util_vector_logic_0": "",
+            "util_vector_logic_2": ""
+          },
+          "nand_3_3": {
+            "util_vector_logic_0": "",
+            "util_vector_logic_2": ""
+          },
+          "nand_3_4": {
+            "util_vector_logic_0": "",
+            "util_vector_logic_2": ""
+          },
+          "nand_3_5": {
+            "util_vector_logic_0": "",
+            "util_vector_logic_2": ""
+          },
+          "nand_3_6": {
+            "util_vector_logic_0": "",
+            "util_vector_logic_2": ""
+          },
+          "nand_3_7": {
+            "util_vector_logic_0": "",
+            "util_vector_logic_2": ""
+          },
+          "not_1": ""
         },
-        "nand_3_1": {
-          "util_vector_logic_0": "",
-          "util_vector_logic_2": ""
-        },
-        "not_0": "",
-        "nand_3_2": {
-          "util_vector_logic_0": "",
-          "util_vector_logic_2": ""
-        },
-        "nand_3_3": {
-          "util_vector_logic_0": "",
-          "util_vector_logic_2": ""
-        },
-        "nand_3_4": {
-          "util_vector_logic_0": "",
-          "util_vector_logic_2": ""
-        },
-        "nand_3_5": {
-          "util_vector_logic_0": "",
-          "util_vector_logic_2": ""
-        },
-        "nand_3_6": {
-          "util_vector_logic_0": "",
-          "util_vector_logic_2": ""
-        },
-        "nand_3_7": {
-          "util_vector_logic_0": "",
-          "util_vector_logic_2": ""
-        },
-        "not_1": ""
+        "and_0": "",
+        "or_0": "",
+        "util_vector_logic_0": "",
+        "and_1": ""
       }
     },
     "ports": {
@@ -68,59 +74,608 @@
       }
     },
     "components": {
-      "DFF": {
+      "JK_FF": {
         "ports": {
-          "clear_bar": {
+          "J": {
+            "direction": "I"
+          },
+          "K": {
             "direction": "I"
           },
           "clock": {
             "direction": "I"
           },
-          "D": {
+          "clear_bar": {
             "direction": "I"
           },
-          "Q_bar": {
+          "Q": {
             "direction": "O",
             "left": "0",
             "right": "0"
           },
-          "Q": {
+          "Q_bar": {
             "direction": "O",
             "left": "0",
             "right": "0"
           }
         },
         "components": {
-          "nand_3_0": {
+          "DFF": {
             "ports": {
-              "in1": {
+              "clear_bar": {
                 "direction": "I"
               },
-              "in2": {
+              "clock": {
                 "direction": "I"
               },
-              "out_n": {
+              "D": {
+                "direction": "I"
+              },
+              "Q_bar": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
                 "direction": "O",
                 "left": "0",
                 "right": "0"
               }
             },
             "components": {
-              "util_vector_logic_0": {
+              "nand_3_0": {
+                "ports": {
+                  "in1": {
+                    "direction": "I"
+                  },
+                  "in2": {
+                    "direction": "I"
+                  },
+                  "out_n": {
+                    "direction": "O",
+                    "left": "0",
+                    "right": "0"
+                  }
+                },
+                "components": {
+                  "util_vector_logic_0": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_0_33",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "and"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  },
+                  "util_vector_logic_2": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_2_30",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "not"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  }
+                },
+                "nets": {
+                  "in1_1": {
+                    "ports": [
+                      "in1",
+                      "util_vector_logic_0/Op1"
+                    ]
+                  },
+                  "in2_1": {
+                    "ports": [
+                      "in2",
+                      "util_vector_logic_0/Op2"
+                    ]
+                  },
+                  "util_vector_logic_0_Res": {
+                    "ports": [
+                      "util_vector_logic_0/Res",
+                      "util_vector_logic_2/Op1"
+                    ]
+                  },
+                  "util_vector_logic_2_Res": {
+                    "ports": [
+                      "util_vector_logic_2/Res",
+                      "out_n"
+                    ]
+                  }
+                }
+              },
+              "nand_3_1": {
+                "ports": {
+                  "in1": {
+                    "direction": "I",
+                    "left": "0",
+                    "right": "0"
+                  },
+                  "in2": {
+                    "direction": "I"
+                  },
+                  "n_out": {
+                    "direction": "O",
+                    "left": "0",
+                    "right": "0"
+                  }
+                },
+                "components": {
+                  "util_vector_logic_0": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_0_34",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "and"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  },
+                  "util_vector_logic_2": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_2_31",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "not"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  }
+                },
+                "nets": {
+                  "in1_1": {
+                    "ports": [
+                      "in1",
+                      "util_vector_logic_0/Op1"
+                    ]
+                  },
+                  "in2_1": {
+                    "ports": [
+                      "in2",
+                      "util_vector_logic_0/Op2"
+                    ]
+                  },
+                  "util_vector_logic_0_Res": {
+                    "ports": [
+                      "util_vector_logic_0/Res",
+                      "util_vector_logic_2/Op1"
+                    ]
+                  },
+                  "util_vector_logic_2_Res": {
+                    "ports": [
+                      "util_vector_logic_2/Res",
+                      "n_out"
+                    ]
+                  }
+                }
+              },
+              "not_0": {
                 "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_0_8",
+                "xci_name": "counter_4_not_0_1",
                 "parameters": {
                   "C_OPERATION": {
-                    "value": "and"
+                    "value": "not"
                   },
                   "C_SIZE": {
                     "value": "1"
                   }
                 }
               },
-              "util_vector_logic_2": {
+              "nand_3_2": {
+                "ports": {
+                  "in1": {
+                    "direction": "I"
+                  },
+                  "in2": {
+                    "direction": "I"
+                  },
+                  "out_n": {
+                    "direction": "O",
+                    "left": "0",
+                    "right": "0"
+                  }
+                },
+                "components": {
+                  "util_vector_logic_0": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_0_35",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "and"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  },
+                  "util_vector_logic_2": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_2_32",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "not"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  }
+                },
+                "nets": {
+                  "in1_1": {
+                    "ports": [
+                      "in1",
+                      "util_vector_logic_0/Op1"
+                    ]
+                  },
+                  "in2_1": {
+                    "ports": [
+                      "in2",
+                      "util_vector_logic_0/Op2"
+                    ]
+                  },
+                  "util_vector_logic_0_Res": {
+                    "ports": [
+                      "util_vector_logic_0/Res",
+                      "util_vector_logic_2/Op1"
+                    ]
+                  },
+                  "util_vector_logic_2_Res": {
+                    "ports": [
+                      "util_vector_logic_2/Res",
+                      "out_n"
+                    ]
+                  }
+                }
+              },
+              "nand_3_3": {
+                "ports": {
+                  "in1": {
+                    "direction": "I"
+                  },
+                  "in2": {
+                    "direction": "I"
+                  },
+                  "out_n": {
+                    "direction": "O",
+                    "left": "0",
+                    "right": "0"
+                  }
+                },
+                "components": {
+                  "util_vector_logic_0": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_0_36",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "and"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  },
+                  "util_vector_logic_2": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_2_33",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "not"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  }
+                },
+                "nets": {
+                  "in1_1": {
+                    "ports": [
+                      "in1",
+                      "util_vector_logic_0/Op1"
+                    ]
+                  },
+                  "in2_1": {
+                    "ports": [
+                      "in2",
+                      "util_vector_logic_0/Op2"
+                    ]
+                  },
+                  "util_vector_logic_0_Res": {
+                    "ports": [
+                      "util_vector_logic_0/Res",
+                      "util_vector_logic_2/Op1"
+                    ]
+                  },
+                  "util_vector_logic_2_Res": {
+                    "ports": [
+                      "util_vector_logic_2/Res",
+                      "out_n"
+                    ]
+                  }
+                }
+              },
+              "nand_3_4": {
+                "ports": {
+                  "in1": {
+                    "direction": "I"
+                  },
+                  "in2": {
+                    "direction": "I"
+                  },
+                  "out_n": {
+                    "direction": "O",
+                    "left": "0",
+                    "right": "0"
+                  }
+                },
+                "components": {
+                  "util_vector_logic_0": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_0_37",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "and"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  },
+                  "util_vector_logic_2": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_2_34",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "not"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  }
+                },
+                "nets": {
+                  "in1_1": {
+                    "ports": [
+                      "in1",
+                      "util_vector_logic_0/Op1"
+                    ]
+                  },
+                  "in2_1": {
+                    "ports": [
+                      "in2",
+                      "util_vector_logic_0/Op2"
+                    ]
+                  },
+                  "util_vector_logic_0_Res": {
+                    "ports": [
+                      "util_vector_logic_0/Res",
+                      "util_vector_logic_2/Op1"
+                    ]
+                  },
+                  "util_vector_logic_2_Res": {
+                    "ports": [
+                      "util_vector_logic_2/Res",
+                      "out_n"
+                    ]
+                  }
+                }
+              },
+              "nand_3_5": {
+                "ports": {
+                  "in1": {
+                    "direction": "I"
+                  },
+                  "in2": {
+                    "direction": "I"
+                  },
+                  "out_n": {
+                    "direction": "O",
+                    "left": "0",
+                    "right": "0"
+                  }
+                },
+                "components": {
+                  "util_vector_logic_0": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_0_38",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "and"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  },
+                  "util_vector_logic_2": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_2_35",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "not"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  }
+                },
+                "nets": {
+                  "in1_1": {
+                    "ports": [
+                      "in1",
+                      "util_vector_logic_0/Op1"
+                    ]
+                  },
+                  "in2_1": {
+                    "ports": [
+                      "in2",
+                      "util_vector_logic_0/Op2"
+                    ]
+                  },
+                  "util_vector_logic_0_Res": {
+                    "ports": [
+                      "util_vector_logic_0/Res",
+                      "util_vector_logic_2/Op1"
+                    ]
+                  },
+                  "util_vector_logic_2_Res": {
+                    "ports": [
+                      "util_vector_logic_2/Res",
+                      "out_n"
+                    ]
+                  }
+                }
+              },
+              "nand_3_6": {
+                "ports": {
+                  "in1": {
+                    "direction": "I"
+                  },
+                  "in2": {
+                    "direction": "I"
+                  },
+                  "out_n": {
+                    "direction": "O",
+                    "left": "0",
+                    "right": "0"
+                  }
+                },
+                "components": {
+                  "util_vector_logic_0": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_0_39",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "and"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  },
+                  "util_vector_logic_2": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_2_36",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "not"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  }
+                },
+                "nets": {
+                  "in1_1": {
+                    "ports": [
+                      "in1",
+                      "util_vector_logic_0/Op1"
+                    ]
+                  },
+                  "in2_1": {
+                    "ports": [
+                      "in2",
+                      "util_vector_logic_0/Op2"
+                    ]
+                  },
+                  "util_vector_logic_0_Res": {
+                    "ports": [
+                      "util_vector_logic_0/Res",
+                      "util_vector_logic_2/Op1"
+                    ]
+                  },
+                  "util_vector_logic_2_Res": {
+                    "ports": [
+                      "util_vector_logic_2/Res",
+                      "out_n"
+                    ]
+                  }
+                }
+              },
+              "nand_3_7": {
+                "ports": {
+                  "in1": {
+                    "direction": "I"
+                  },
+                  "in2": {
+                    "direction": "I"
+                  },
+                  "out_n": {
+                    "direction": "O",
+                    "left": "0",
+                    "right": "0"
+                  }
+                },
+                "components": {
+                  "util_vector_logic_0": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_0_40",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "and"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  },
+                  "util_vector_logic_2": {
+                    "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+                    "xci_name": "counter_4_util_vector_logic_2_37",
+                    "parameters": {
+                      "C_OPERATION": {
+                        "value": "not"
+                      },
+                      "C_SIZE": {
+                        "value": "1"
+                      }
+                    }
+                  }
+                },
+                "nets": {
+                  "in1_1": {
+                    "ports": [
+                      "in1",
+                      "util_vector_logic_0/Op1"
+                    ]
+                  },
+                  "in2_1": {
+                    "ports": [
+                      "in2",
+                      "util_vector_logic_0/Op2"
+                    ]
+                  },
+                  "util_vector_logic_0_Res": {
+                    "ports": [
+                      "util_vector_logic_0/Res",
+                      "util_vector_logic_2/Op1"
+                    ]
+                  },
+                  "util_vector_logic_2_Res": {
+                    "ports": [
+                      "util_vector_logic_2/Res",
+                      "out_n"
+                    ]
+                  }
+                }
+              },
+              "not_1": {
                 "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_2_7",
+                "xci_name": "counter_4_not_1_1",
                 "parameters": {
                   "C_OPERATION": {
                     "value": "not"
@@ -132,104 +687,117 @@
               }
             },
             "nets": {
+              "clear_bar_1": {
+                "ports": [
+                  "clear_bar",
+                  "nand_3_0/in1",
+                  "nand_3_3/in1"
+                ]
+              },
+              "D_1": {
+                "ports": [
+                  "D",
+                  "nand_3_1/in2"
+                ]
+              },
+              "nand_3_1_n_out": {
+                "ports": [
+                  "nand_3_1/n_out",
+                  "nand_3_2/in1"
+                ]
+              },
+              "nand_3_2_out_n": {
+                "ports": [
+                  "nand_3_2/out_n",
+                  "nand_3_3/in2"
+                ]
+              },
+              "nand_3_6_out_n": {
+                "ports": [
+                  "nand_3_6/out_n",
+                  "nand_3_7/in1",
+                  "Q_bar"
+                ]
+              },
+              "nand_3_7_out_n": {
+                "ports": [
+                  "nand_3_7/out_n",
+                  "nand_3_6/in2",
+                  "Q"
+                ]
+              },
               "in1_1": {
                 "ports": [
-                  "in1",
-                  "util_vector_logic_0/Op1"
+                  "nand_3_4/out_n",
+                  "nand_3_6/in1",
+                  "nand_3_1/in1"
                 ]
               },
               "in2_1": {
                 "ports": [
-                  "in2",
-                  "util_vector_logic_0/Op2"
+                  "nand_3_5/out_n",
+                  "nand_3_7/in2",
+                  "nand_3_2/in2"
+                ]
+              },
+              "in1_2": {
+                "ports": [
+                  "nand_3_0/out_n",
+                  "nand_3_4/in1",
+                  "nand_3_5/in1"
+                ]
+              },
+              "in2_2": {
+                "ports": [
+                  "not_0/Res",
+                  "nand_3_5/in2"
+                ]
+              },
+              "nand_3_3_out_n": {
+                "ports": [
+                  "nand_3_3/out_n",
+                  "not_0/Op1",
+                  "nand_3_4/in2"
                 ]
               },
               "util_vector_logic_0_Res": {
                 "ports": [
-                  "util_vector_logic_0/Res",
-                  "util_vector_logic_2/Op1"
+                  "not_1/Res",
+                  "nand_3_0/in2"
                 ]
               },
-              "util_vector_logic_2_Res": {
+              "clock_1": {
                 "ports": [
-                  "util_vector_logic_2/Res",
-                  "out_n"
+                  "clock",
+                  "not_1/Op1"
                 ]
               }
             }
           },
-          "nand_3_1": {
-            "ports": {
-              "in1": {
-                "direction": "I",
-                "left": "0",
-                "right": "0"
-              },
-              "in2": {
-                "direction": "I"
-              },
-              "n_out": {
-                "direction": "O",
-                "left": "0",
-                "right": "0"
-              }
-            },
-            "components": {
-              "util_vector_logic_0": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_0_10",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "and"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              },
-              "util_vector_logic_2": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_2_9",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "not"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              }
-            },
-            "nets": {
-              "in1_1": {
-                "ports": [
-                  "in1",
-                  "util_vector_logic_0/Op1"
-                ]
-              },
-              "in2_1": {
-                "ports": [
-                  "in2",
-                  "util_vector_logic_0/Op2"
-                ]
-              },
-              "util_vector_logic_0_Res": {
-                "ports": [
-                  "util_vector_logic_0/Res",
-                  "util_vector_logic_2/Op1"
-                ]
-              },
-              "util_vector_logic_2_Res": {
-                "ports": [
-                  "util_vector_logic_2/Res",
-                  "n_out"
-                ]
-              }
-            }
-          },
-          "not_0": {
+          "and_0": {
             "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-            "xci_name": "counter_4_util_vector_logic_0_17",
+            "xci_name": "counter_4_util_vector_logic_0_41",
+            "parameters": {
+              "C_SIZE": {
+                "value": "1"
+              }
+            }
+          },
+          "or_0": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "xci_name": "counter_4_util_vector_logic_0_42",
+            "parameters": {
+              "C_OPERATION": {
+                "value": "or"
+              },
+              "C_SIZE": {
+                "value": "1"
+              }
+            }
+          },
+          "util_vector_logic_0": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "xci_name": "counter_4_util_vector_logic_0_43",
             "parameters": {
               "C_OPERATION": {
                 "value": "not"
@@ -239,415 +807,10 @@
               }
             }
           },
-          "nand_3_2": {
-            "ports": {
-              "in1": {
-                "direction": "I"
-              },
-              "in2": {
-                "direction": "I"
-              },
-              "out_n": {
-                "direction": "O",
-                "left": "0",
-                "right": "0"
-              }
-            },
-            "components": {
-              "util_vector_logic_0": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_0_18",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "and"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              },
-              "util_vector_logic_2": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_2_16",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "not"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              }
-            },
-            "nets": {
-              "in1_1": {
-                "ports": [
-                  "in1",
-                  "util_vector_logic_0/Op1"
-                ]
-              },
-              "in2_1": {
-                "ports": [
-                  "in2",
-                  "util_vector_logic_0/Op2"
-                ]
-              },
-              "util_vector_logic_0_Res": {
-                "ports": [
-                  "util_vector_logic_0/Res",
-                  "util_vector_logic_2/Op1"
-                ]
-              },
-              "util_vector_logic_2_Res": {
-                "ports": [
-                  "util_vector_logic_2/Res",
-                  "out_n"
-                ]
-              }
-            }
-          },
-          "nand_3_3": {
-            "ports": {
-              "in1": {
-                "direction": "I"
-              },
-              "in2": {
-                "direction": "I"
-              },
-              "out_n": {
-                "direction": "O",
-                "left": "0",
-                "right": "0"
-              }
-            },
-            "components": {
-              "util_vector_logic_0": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_0_19",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "and"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              },
-              "util_vector_logic_2": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_2_17",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "not"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              }
-            },
-            "nets": {
-              "in1_1": {
-                "ports": [
-                  "in1",
-                  "util_vector_logic_0/Op1"
-                ]
-              },
-              "in2_1": {
-                "ports": [
-                  "in2",
-                  "util_vector_logic_0/Op2"
-                ]
-              },
-              "util_vector_logic_0_Res": {
-                "ports": [
-                  "util_vector_logic_0/Res",
-                  "util_vector_logic_2/Op1"
-                ]
-              },
-              "util_vector_logic_2_Res": {
-                "ports": [
-                  "util_vector_logic_2/Res",
-                  "out_n"
-                ]
-              }
-            }
-          },
-          "nand_3_4": {
-            "ports": {
-              "in1": {
-                "direction": "I"
-              },
-              "in2": {
-                "direction": "I"
-              },
-              "out_n": {
-                "direction": "O",
-                "left": "0",
-                "right": "0"
-              }
-            },
-            "components": {
-              "util_vector_logic_0": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_0_20",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "and"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              },
-              "util_vector_logic_2": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_2_18",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "not"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              }
-            },
-            "nets": {
-              "in1_1": {
-                "ports": [
-                  "in1",
-                  "util_vector_logic_0/Op1"
-                ]
-              },
-              "in2_1": {
-                "ports": [
-                  "in2",
-                  "util_vector_logic_0/Op2"
-                ]
-              },
-              "util_vector_logic_0_Res": {
-                "ports": [
-                  "util_vector_logic_0/Res",
-                  "util_vector_logic_2/Op1"
-                ]
-              },
-              "util_vector_logic_2_Res": {
-                "ports": [
-                  "util_vector_logic_2/Res",
-                  "out_n"
-                ]
-              }
-            }
-          },
-          "nand_3_5": {
-            "ports": {
-              "in1": {
-                "direction": "I"
-              },
-              "in2": {
-                "direction": "I"
-              },
-              "out_n": {
-                "direction": "O",
-                "left": "0",
-                "right": "0"
-              }
-            },
-            "components": {
-              "util_vector_logic_0": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_0_21",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "and"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              },
-              "util_vector_logic_2": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_2_19",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "not"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              }
-            },
-            "nets": {
-              "in1_1": {
-                "ports": [
-                  "in1",
-                  "util_vector_logic_0/Op1"
-                ]
-              },
-              "in2_1": {
-                "ports": [
-                  "in2",
-                  "util_vector_logic_0/Op2"
-                ]
-              },
-              "util_vector_logic_0_Res": {
-                "ports": [
-                  "util_vector_logic_0/Res",
-                  "util_vector_logic_2/Op1"
-                ]
-              },
-              "util_vector_logic_2_Res": {
-                "ports": [
-                  "util_vector_logic_2/Res",
-                  "out_n"
-                ]
-              }
-            }
-          },
-          "nand_3_6": {
-            "ports": {
-              "in1": {
-                "direction": "I"
-              },
-              "in2": {
-                "direction": "I"
-              },
-              "out_n": {
-                "direction": "O",
-                "left": "0",
-                "right": "0"
-              }
-            },
-            "components": {
-              "util_vector_logic_0": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_0_22",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "and"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              },
-              "util_vector_logic_2": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_2_20",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "not"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              }
-            },
-            "nets": {
-              "in1_1": {
-                "ports": [
-                  "in1",
-                  "util_vector_logic_0/Op1"
-                ]
-              },
-              "in2_1": {
-                "ports": [
-                  "in2",
-                  "util_vector_logic_0/Op2"
-                ]
-              },
-              "util_vector_logic_0_Res": {
-                "ports": [
-                  "util_vector_logic_0/Res",
-                  "util_vector_logic_2/Op1"
-                ]
-              },
-              "util_vector_logic_2_Res": {
-                "ports": [
-                  "util_vector_logic_2/Res",
-                  "out_n"
-                ]
-              }
-            }
-          },
-          "nand_3_7": {
-            "ports": {
-              "in1": {
-                "direction": "I"
-              },
-              "in2": {
-                "direction": "I"
-              },
-              "out_n": {
-                "direction": "O",
-                "left": "0",
-                "right": "0"
-              }
-            },
-            "components": {
-              "util_vector_logic_0": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_0_23",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "and"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              },
-              "util_vector_logic_2": {
-                "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-                "xci_name": "counter_4_util_vector_logic_2_21",
-                "parameters": {
-                  "C_OPERATION": {
-                    "value": "not"
-                  },
-                  "C_SIZE": {
-                    "value": "1"
-                  }
-                }
-              }
-            },
-            "nets": {
-              "in1_1": {
-                "ports": [
-                  "in1",
-                  "util_vector_logic_0/Op1"
-                ]
-              },
-              "in2_1": {
-                "ports": [
-                  "in2",
-                  "util_vector_logic_0/Op2"
-                ]
-              },
-              "util_vector_logic_0_Res": {
-                "ports": [
-                  "util_vector_logic_0/Res",
-                  "util_vector_logic_2/Op1"
-                ]
-              },
-              "util_vector_logic_2_Res": {
-                "ports": [
-                  "util_vector_logic_2/Res",
-                  "out_n"
-                ]
-              }
-            }
-          },
-          "not_1": {
+          "and_1": {
             "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-            "xci_name": "counter_4_util_vector_logic_0_24",
+            "xci_name": "counter_4_and_0_0",
             "parameters": {
-              "C_OPERATION": {
-                "value": "not"
-              },
               "C_SIZE": {
                 "value": "1"
               }
@@ -658,120 +821,98 @@
           "clear_bar_1": {
             "ports": [
               "clear_bar",
-              "nand_3_0/in1",
-              "nand_3_3/in1"
-            ]
-          },
-          "D_1": {
-            "ports": [
-              "D",
-              "nand_3_1/in2"
-            ]
-          },
-          "nand_3_1_n_out": {
-            "ports": [
-              "nand_3_1/n_out",
-              "nand_3_2/in1"
-            ]
-          },
-          "nand_3_2_out_n": {
-            "ports": [
-              "nand_3_2/out_n",
-              "nand_3_3/in2"
-            ]
-          },
-          "nand_3_6_out_n": {
-            "ports": [
-              "nand_3_6/out_n",
-              "nand_3_7/in1",
-              "Q_bar"
-            ]
-          },
-          "nand_3_7_out_n": {
-            "ports": [
-              "nand_3_7/out_n",
-              "nand_3_6/in2",
-              "Q"
-            ]
-          },
-          "in1_1": {
-            "ports": [
-              "nand_3_4/out_n",
-              "nand_3_6/in1",
-              "nand_3_1/in1"
-            ]
-          },
-          "in2_1": {
-            "ports": [
-              "nand_3_5/out_n",
-              "nand_3_7/in2",
-              "nand_3_2/in2"
-            ]
-          },
-          "in1_2": {
-            "ports": [
-              "nand_3_0/out_n",
-              "nand_3_4/in1",
-              "nand_3_5/in1"
-            ]
-          },
-          "in2_2": {
-            "ports": [
-              "not_0/Res",
-              "nand_3_5/in2"
-            ]
-          },
-          "nand_3_3_out_n": {
-            "ports": [
-              "nand_3_3/out_n",
-              "not_0/Op1",
-              "nand_3_4/in2"
-            ]
-          },
-          "util_vector_logic_0_Res": {
-            "ports": [
-              "not_1/Res",
-              "nand_3_0/in2"
+              "DFF/clear_bar"
             ]
           },
           "clock_1": {
             "ports": [
               "clock",
-              "not_1/Op1"
+              "DFF/clock"
+            ]
+          },
+          "J_1": {
+            "ports": [
+              "J",
+              "and_0/Op1"
+            ]
+          },
+          "DFF_Q_bar": {
+            "ports": [
+              "DFF/Q_bar",
+              "and_0/Op2",
+              "Q_bar"
+            ]
+          },
+          "and_0_Res": {
+            "ports": [
+              "and_0/Res",
+              "or_0/Op1"
+            ]
+          },
+          "K_1": {
+            "ports": [
+              "K",
+              "util_vector_logic_0/Op1"
+            ]
+          },
+          "util_vector_logic_0_Res": {
+            "ports": [
+              "util_vector_logic_0/Res",
+              "and_1/Op1"
+            ]
+          },
+          "DFF_Q": {
+            "ports": [
+              "DFF/Q",
+              "and_1/Op2",
+              "Q"
+            ]
+          },
+          "and_1_Res": {
+            "ports": [
+              "and_1/Res",
+              "or_0/Op2"
+            ]
+          },
+          "or_0_Res": {
+            "ports": [
+              "or_0/Res",
+              "DFF/D"
             ]
           }
         }
       }
     },
     "nets": {
-      "clear_1": {
-        "ports": [
-          "clear_bar",
-          "DFF/clear_bar"
-        ]
-      },
       "clock_1": {
         "ports": [
           "clock",
-          "DFF/clock"
+          "JK_FF/clock"
+        ]
+      },
+      "clear_bar_1": {
+        "ports": [
+          "clear_bar",
+          "JK_FF/clear_bar"
         ]
       },
       "D_1": {
         "ports": [
           "D",
-          "DFF/D"
+          "JK_FF/J",
+          "JK_FF/K"
         ]
       },
-      "DFF_Q_bar": {
+      "JK_FF_Q": {
         "ports": [
-          "DFF/Q_bar",
-          "Q_bar"
-        ]
-      },
-      "DFF_Q": {
-        "ports": [
-          "DFF/Q",
+          "JK_FF/Q",
           "Q"
+        ]
+      },
+      "JK_FF_Q_bar": {
+        "ports": [
+          "JK_FF/Q_bar",
+          "Q_bar"
         ]
       }
     }

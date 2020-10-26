@@ -759,6 +759,97 @@ proc create_hier_cell_DFF { parentCell nameHier } {
   current_bd_instance $oldCurInst
 }
 
+# Hierarchical cell: JK_FF
+proc create_hier_cell_JK_FF { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_JK_FF() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I J
+  create_bd_pin -dir I K
+  create_bd_pin -dir O -from 0 -to 0 Q
+  create_bd_pin -dir O -from 0 -to 0 Q_bar
+  create_bd_pin -dir I clear_bar
+  create_bd_pin -dir I clock
+
+  # Create instance: DFF
+  create_hier_cell_DFF $hier_obj DFF
+
+  # Create instance: and_0, and set properties
+  set and_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_0 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_0
+
+  # Create instance: and_1, and set properties
+  set and_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_1 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_1
+
+  # Create instance: or_0, and set properties
+  set or_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 or_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {or} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_orgate.png} \
+ ] $or_0
+
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_0
+
+  # Create port connections
+  connect_bd_net -net DFF_Q [get_bd_pins Q] [get_bd_pins DFF/Q] [get_bd_pins and_1/Op2]
+  connect_bd_net -net DFF_Q_bar [get_bd_pins Q_bar] [get_bd_pins DFF/Q_bar] [get_bd_pins and_0/Op2]
+  connect_bd_net -net J_1 [get_bd_pins J] [get_bd_pins and_0/Op1]
+  connect_bd_net -net K_1 [get_bd_pins K] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net and_0_Res [get_bd_pins and_0/Res] [get_bd_pins or_0/Op1]
+  connect_bd_net -net and_1_Res [get_bd_pins and_1/Res] [get_bd_pins or_0/Op2]
+  connect_bd_net -net clear_bar_1 [get_bd_pins clear_bar] [get_bd_pins DFF/clear_bar]
+  connect_bd_net -net clock_1 [get_bd_pins clock] [get_bd_pins DFF/clock]
+  connect_bd_net -net or_0_Res [get_bd_pins DFF/D] [get_bd_pins or_0/Res]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins and_1/Op1] [get_bd_pins util_vector_logic_0/Res]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
 
 # Procedure to create entire design; Provide argument to make
 # procedure reusable. If parentCell is "", will use root.
@@ -801,15 +892,15 @@ proc create_root_design { parentCell } {
   set clear_bar [ create_bd_port -dir I clear_bar ]
   set clock [ create_bd_port -dir I clock ]
 
-  # Create instance: DFF
-  create_hier_cell_DFF [current_bd_instance .] DFF
+  # Create instance: JK_FF
+  create_hier_cell_JK_FF [current_bd_instance .] JK_FF
 
   # Create port connections
-  connect_bd_net -net DFF_Q [get_bd_ports Q] [get_bd_pins DFF/Q]
-  connect_bd_net -net DFF_Q_bar [get_bd_ports Q_bar] [get_bd_pins DFF/Q_bar]
-  connect_bd_net -net D_1 [get_bd_ports D] [get_bd_pins DFF/D]
-  connect_bd_net -net clear_1 [get_bd_ports clear_bar] [get_bd_pins DFF/clear_bar]
-  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins DFF/clock]
+  connect_bd_net -net D_1 [get_bd_ports D] [get_bd_pins JK_FF/J] [get_bd_pins JK_FF/K]
+  connect_bd_net -net JK_FF_Q [get_bd_ports Q] [get_bd_pins JK_FF/Q]
+  connect_bd_net -net JK_FF_Q_bar [get_bd_ports Q_bar] [get_bd_pins JK_FF/Q_bar]
+  connect_bd_net -net clear_bar_1 [get_bd_ports clear_bar] [get_bd_pins JK_FF/clear_bar]
+  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins JK_FF/clock]
 
   # Create address segments
 
