@@ -105,6 +105,10 @@
   "../../../bd/counter_4/ip/counter_4_and_2_0/sim/counter_4_and_2_0.v" \
   "../../../bd/counter_4/ip/counter_4_and_2_1/sim/counter_4_and_2_1.v" \
   "../../../bd/counter_4/ip/counter_4_or_1_0/sim/counter_4_or_1_0.v" \
+  "../../../bd/counter_4/ip/counter_4_and_0_7/sim/counter_4_and_0_7.v" \
+  "../../../bd/counter_4/ip/counter_4_and_0_8/sim/counter_4_and_0_8.v" \
+  "../../../bd/counter_4/ip/counter_4_and_2_2/sim/counter_4_and_2_2.v" \
+  "../../../bd/counter_4/ip/counter_4_and_4_0/sim/counter_4_and_4_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

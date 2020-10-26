@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x37C0B4A937C0B4A9",
+      "boundary_crc": "0x60FC720060FC72",
       "device": "xc7a35tcpg236-1",
       "name": "counter_4",
       "synth_flow_mode": "Hierarchical",
@@ -188,7 +188,11 @@
       "or_1": "",
       "and_4": "",
       "and_5": "",
-      "or_2": ""
+      "or_2": "",
+      "and_6": "",
+      "and_7": "",
+      "and_8": "",
+      "and_9": ""
     },
     "ports": {
       "clear_bar": {
@@ -219,6 +223,9 @@
         "direction": "O",
         "left": "0",
         "right": "0"
+      },
+      "Enable": {
+        "direction": "I"
       }
     },
     "components": {
@@ -3579,6 +3586,42 @@
             "value": "1"
           }
         }
+      },
+      "and_6": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "counter_4_and_0_7",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "and_7": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "counter_4_and_0_8",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "and_8": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "counter_4_and_2_2",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "and_9": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "counter_4_and_4_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
       }
     },
     "nets": {
@@ -3597,13 +3640,6 @@
         "ports": [
           "xor_0/Res",
           "not_0/Op1"
-        ]
-      },
-      "not_0_Res": {
-        "ports": [
-          "not_0/Res",
-          "JK_FF_0/J",
-          "JK_FF_0/K"
         ]
       },
       "U_1": {
@@ -3646,13 +3682,6 @@
           "and_3/Op2"
         ]
       },
-      "or_0_Res": {
-        "ports": [
-          "or_0/Res",
-          "JK_FF_1/J",
-          "JK_FF_1/K"
-        ]
-      },
       "JK_FF_1_Q": {
         "ports": [
           "JK_FF_1/Q",
@@ -3678,13 +3707,6 @@
           "and_3/Res",
           "or_1/Op2",
           "and_5/Op2"
-        ]
-      },
-      "or_1_Res": {
-        "ports": [
-          "or_1/Res",
-          "JK_FF_2/J",
-          "JK_FF_2/K"
         ]
       },
       "clock_1": {
@@ -3721,17 +3743,71 @@
           "or_2/Op2"
         ]
       },
-      "or_2_Res": {
-        "ports": [
-          "or_2/Res",
-          "JK_FF_3/J",
-          "JK_FF_3/K"
-        ]
-      },
       "JK_FF_3_Q": {
         "ports": [
           "JK_FF_3/Q",
           "Q3"
+        ]
+      },
+      "Enable_1": {
+        "ports": [
+          "Enable",
+          "and_6/Op2",
+          "and_7/Op2",
+          "and_8/Op2",
+          "and_9/Op2"
+        ]
+      },
+      "not_0_Res": {
+        "ports": [
+          "not_0/Res",
+          "and_6/Op1"
+        ]
+      },
+      "and_6_Res": {
+        "ports": [
+          "and_6/Res",
+          "JK_FF_0/J",
+          "JK_FF_0/K"
+        ]
+      },
+      "or_0_Res": {
+        "ports": [
+          "or_0/Res",
+          "and_7/Op1"
+        ]
+      },
+      "and_7_Res": {
+        "ports": [
+          "and_7/Res",
+          "JK_FF_1/J",
+          "JK_FF_1/K"
+        ]
+      },
+      "or_1_Res": {
+        "ports": [
+          "or_1/Res",
+          "and_8/Op1"
+        ]
+      },
+      "and_8_Res": {
+        "ports": [
+          "and_8/Res",
+          "JK_FF_2/K",
+          "JK_FF_2/J"
+        ]
+      },
+      "or_2_Res": {
+        "ports": [
+          "or_2/Res",
+          "and_9/Op1"
+        ]
+      },
+      "and_9_Res": {
+        "ports": [
+          "and_9/Res",
+          "JK_FF_3/J",
+          "JK_FF_3/K"
         ]
       }
     }

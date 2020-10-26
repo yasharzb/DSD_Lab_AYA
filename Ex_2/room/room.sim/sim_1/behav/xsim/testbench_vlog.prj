@@ -101,6 +101,10 @@ verilog xil_defaultlib  \
 "../../../../room.ip_user_files/bd/counter_4/ip/counter_4_and_2_0/sim/counter_4_and_2_0.v" \
 "../../../../room.ip_user_files/bd/counter_4/ip/counter_4_and_2_1/sim/counter_4_and_2_1.v" \
 "../../../../room.ip_user_files/bd/counter_4/ip/counter_4_or_1_0/sim/counter_4_or_1_0.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_and_0_7/sim/counter_4_and_0_7.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_and_0_8/sim/counter_4_and_0_8.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_and_2_2/sim/counter_4_and_2_2.v" \
+"../../../../room.ip_user_files/bd/counter_4/ip/counter_4_and_4_0/sim/counter_4_and_4_0.v" \
 "../../../../room.srcs/sources_1/new/testbench.v" \
 
 # compile glbl module

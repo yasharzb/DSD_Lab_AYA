@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Mon Oct 26 11:42:33 2020
+//Date        : Mon Oct 26 12:01:41 2020
 //Host        : DESKTOP-4NPEG9F running 64-bit major release  (build 9200)
 //Command     : generate_target counter_4.bd
 //Design      : counter_4
@@ -509,15 +509,17 @@ module JK_FF_3_imp_18D4FL9
         .Res(util_vector_logic_0_Res));
 endmodule
 
-(* CORE_GENERATION_INFO = "counter_4,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=counter_4,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=140,numReposBlks=100,numNonXlnxBlks=0,numHierBlks=40,maxHierDepth=3,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "counter_4.hwdef" *) 
+(* CORE_GENERATION_INFO = "counter_4,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=counter_4,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=144,numReposBlks=104,numNonXlnxBlks=0,numHierBlks=40,maxHierDepth=3,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "counter_4.hwdef" *) 
 module counter_4
-   (Q0,
+   (Enable,
+    Q0,
     Q1,
     Q2,
     Q3,
     U,
     clear_bar,
     clock);
+  input Enable;
   output [0:0]Q0;
   output [0:0]Q1;
   output [0:0]Q2;
@@ -526,6 +528,7 @@ module counter_4
   input clear_bar;
   input clock;
 
+  wire Enable_1;
   wire [0:0]JK_FF_0_Q;
   wire [0:0]JK_FF_0_Q_bar;
   wire [0:0]JK_FF_1_Q;
@@ -540,6 +543,10 @@ module counter_4
   wire [0:0]and_3_Res;
   wire [0:0]and_4_Res;
   wire [0:0]and_5_Res;
+  wire [0:0]and_6_Res;
+  wire [0:0]and_7_Res;
+  wire [0:0]and_8_Res;
+  wire [0:0]and_9_Res;
   wire clear_bar_1;
   wire clock_1;
   wire [0:0]not_0_Res;
@@ -549,6 +556,7 @@ module counter_4
   wire [0:0]or_2_Res;
   wire [0:0]util_vector_logic_0_Res;
 
+  assign Enable_1 = Enable;
   assign Q0[0] = JK_FF_0_Q;
   assign Q1[0] = JK_FF_1_Q;
   assign Q2[0] = JK_FF_2_Q;
@@ -557,29 +565,29 @@ module counter_4
   assign clear_bar_1 = clear_bar;
   assign clock_1 = clock;
   JK_FF_0_imp_WEXMUM JK_FF_0
-       (.J(not_0_Res),
-        .K(not_0_Res),
+       (.J(and_6_Res),
+        .K(and_6_Res),
         .Q(JK_FF_0_Q),
         .Q_bar(JK_FF_0_Q_bar),
         .clear_bar(clear_bar_1),
         .clock(clock_1));
   JK_FF_1_imp_170XEQ8 JK_FF_1
-       (.J(or_0_Res),
-        .K(or_0_Res),
+       (.J(and_7_Res),
+        .K(and_7_Res),
         .Q(JK_FF_1_Q),
         .Q_bar(JK_FF_1_Q_bar),
         .clear_bar(clear_bar_1),
         .clock(clock_1));
   JK_FF_2_imp_V497TF JK_FF_2
-       (.J(or_1_Res),
-        .K(or_1_Res),
+       (.J(and_8_Res),
+        .K(and_8_Res),
         .Q(JK_FF_2_Q),
         .Q_bar(JK_FF_2_Q_bar),
         .clear_bar(clear_bar_1),
         .clock(clock_1));
   JK_FF_3_imp_18D4FL9 JK_FF_3
-       (.J(or_2_Res),
-        .K(or_2_Res),
+       (.J(and_9_Res),
+        .K(and_9_Res),
         .Q(JK_FF_3_Q),
         .clear_bar(clear_bar_1),
         .clock(clock_1));
@@ -607,6 +615,22 @@ module counter_4
        (.Op1(JK_FF_2_Q_bar),
         .Op2(and_3_Res),
         .Res(and_5_Res));
+  counter_4_and_0_7 and_6
+       (.Op1(not_0_Res),
+        .Op2(Enable_1),
+        .Res(and_6_Res));
+  counter_4_and_0_8 and_7
+       (.Op1(or_0_Res),
+        .Op2(Enable_1),
+        .Res(and_7_Res));
+  counter_4_and_2_2 and_8
+       (.Op1(or_1_Res),
+        .Op2(Enable_1),
+        .Res(and_8_Res));
+  counter_4_and_4_0 and_9
+       (.Op1(or_2_Res),
+        .Op2(Enable_1),
+        .Res(and_9_Res));
   counter_4_util_vector_logic_1_0 not_0
        (.Op1(util_vector_logic_0_Res),
         .Res(not_0_Res));

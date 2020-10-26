@@ -3073,6 +3073,7 @@ proc create_root_design { parentCell } {
   # Create interface ports
 
   # Create ports
+  set Enable [ create_bd_port -dir I Enable ]
   set Q0 [ create_bd_port -dir O -from 0 -to 0 Q0 ]
   set Q1 [ create_bd_port -dir O -from 0 -to 0 Q1 ]
   set Q2 [ create_bd_port -dir O -from 0 -to 0 Q2 ]
@@ -3129,6 +3130,30 @@ proc create_root_design { parentCell } {
    CONFIG.C_SIZE {1} \
  ] $and_5
 
+  # Create instance: and_6, and set properties
+  set and_6 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_6 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_6
+
+  # Create instance: and_7, and set properties
+  set and_7 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_7 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_7
+
+  # Create instance: and_8, and set properties
+  set and_8 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_8 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_8
+
+  # Create instance: and_9, and set properties
+  set and_9 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 and_9 ]
+  set_property -dict [ list \
+   CONFIG.C_SIZE {1} \
+ ] $and_9
+
   # Create instance: not_0, and set properties
   set not_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 not_0 ]
   set_property -dict [ list \
@@ -3178,6 +3203,7 @@ proc create_root_design { parentCell } {
  ] $xor_0
 
   # Create port connections
+  connect_bd_net -net Enable_1 [get_bd_ports Enable] [get_bd_pins and_6/Op2] [get_bd_pins and_7/Op2] [get_bd_pins and_8/Op2] [get_bd_pins and_9/Op2]
   connect_bd_net -net JK_FF_0_Q [get_bd_ports Q0] [get_bd_pins JK_FF_0/Q] [get_bd_pins and_0/Op2]
   connect_bd_net -net JK_FF_0_Q_bar [get_bd_pins JK_FF_0/Q_bar] [get_bd_pins and_1/Op1]
   connect_bd_net -net JK_FF_1_Q [get_bd_ports Q1] [get_bd_pins JK_FF_1/Q] [get_bd_pins and_2/Op2]
@@ -3192,13 +3218,17 @@ proc create_root_design { parentCell } {
   connect_bd_net -net and_3_Res [get_bd_pins and_3/Res] [get_bd_pins and_5/Op2] [get_bd_pins or_1/Op2]
   connect_bd_net -net and_4_Res [get_bd_pins and_4/Res] [get_bd_pins or_2/Op1]
   connect_bd_net -net and_5_Res [get_bd_pins and_5/Res] [get_bd_pins or_2/Op2]
+  connect_bd_net -net and_6_Res [get_bd_pins JK_FF_0/J] [get_bd_pins JK_FF_0/K] [get_bd_pins and_6/Res]
+  connect_bd_net -net and_7_Res [get_bd_pins JK_FF_1/J] [get_bd_pins JK_FF_1/K] [get_bd_pins and_7/Res]
+  connect_bd_net -net and_8_Res [get_bd_pins JK_FF_2/J] [get_bd_pins JK_FF_2/K] [get_bd_pins and_8/Res]
+  connect_bd_net -net and_9_Res [get_bd_pins JK_FF_3/J] [get_bd_pins JK_FF_3/K] [get_bd_pins and_9/Res]
   connect_bd_net -net clear_bar_1 [get_bd_ports clear_bar] [get_bd_pins JK_FF_0/clear_bar] [get_bd_pins JK_FF_1/clear_bar] [get_bd_pins JK_FF_2/clear_bar] [get_bd_pins JK_FF_3/clear_bar] [get_bd_pins xor_0/Op1] [get_bd_pins xor_0/Op2]
   connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins JK_FF_0/clock] [get_bd_pins JK_FF_1/clock] [get_bd_pins JK_FF_2/clock] [get_bd_pins JK_FF_3/clock]
-  connect_bd_net -net not_0_Res [get_bd_pins JK_FF_0/J] [get_bd_pins JK_FF_0/K] [get_bd_pins not_0/Res]
+  connect_bd_net -net not_0_Res [get_bd_pins and_6/Op1] [get_bd_pins not_0/Res]
   connect_bd_net -net not_1_Res [get_bd_pins and_1/Op2] [get_bd_pins not_1/Res]
-  connect_bd_net -net or_0_Res [get_bd_pins JK_FF_1/J] [get_bd_pins JK_FF_1/K] [get_bd_pins or_0/Res]
-  connect_bd_net -net or_1_Res [get_bd_pins JK_FF_2/J] [get_bd_pins JK_FF_2/K] [get_bd_pins or_1/Res]
-  connect_bd_net -net or_2_Res [get_bd_pins JK_FF_3/J] [get_bd_pins JK_FF_3/K] [get_bd_pins or_2/Res]
+  connect_bd_net -net or_0_Res [get_bd_pins and_7/Op1] [get_bd_pins or_0/Res]
+  connect_bd_net -net or_1_Res [get_bd_pins and_8/Op1] [get_bd_pins or_1/Res]
+  connect_bd_net -net or_2_Res [get_bd_pins and_9/Op1] [get_bd_pins or_2/Res]
   connect_bd_net -net util_vector_logic_0_Res [get_bd_pins not_0/Op1] [get_bd_pins xor_0/Res]
 
   # Create address segments

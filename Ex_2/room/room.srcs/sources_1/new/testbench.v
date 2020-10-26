@@ -23,10 +23,10 @@
 module testbench(
     );
     
-    reg clock = 0,clear_bar = 1, U;
+    reg clock = 0,clear_bar = 1, U, Enable = 1;
     wire Q0, Q1, Q2, Q3;
     
-    counter_4 c4(.clear_bar(clear_bar), .U(U), .clock(clock), .Q0(Q0), .Q1(Q1), .Q2(Q2), .Q3(Q3));
+    counter_4 c4(.clear_bar(clear_bar), .U(U), .clock(clock), .Enable(Enable), .Q0(Q0), .Q1(Q1), .Q2(Q2), .Q3(Q3));
     
     initial begin 
     clock = 0;
@@ -41,6 +41,8 @@ module testbench(
         clear_bar = 1;
         #30;
         U = 0;
+        #40
+        Enable = 0;
     end
         
 endmodule
