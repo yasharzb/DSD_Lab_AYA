@@ -40,6 +40,7 @@ module testbench(
         #2
         clear_bar = 1;
         #30;
+        U = 0;
     end
         
 endmodule
