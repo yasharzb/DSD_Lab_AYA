@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1603778569">
+  <File Type="PA-TCL" Name="room_man.tcl"/>
+  <File Type="REPORTS-TCL" Name="room_man_reports.tcl"/>
+  <File Type="RDS-RDS" Name="room_man.vds"/>
+  <File Type="RDS-UTIL" Name="room_man_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="room_man_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="room_man.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/counter_4/counter_4.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/room_man.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/room_man_test.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/testbench.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="room_man"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_36"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_47"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_49"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_58"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_50"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_61"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_41"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_52"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_30"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_not_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_55"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_57"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_33"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_46"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_58"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_34"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_56"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_45"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_36"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_51"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_31"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_42"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_53"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_62"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_40"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_not_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_not_1_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_48"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_46"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_37"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_57"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_50"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_40"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_60"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_51"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_43"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_54"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_34"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_45"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_59"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_39"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_48"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_37"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_33"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_55"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_64"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_42"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_53"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_44"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_not_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_not_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_not_1_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_not_0_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_or_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_52"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_54"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_63"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_41"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_39"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_0_8"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_or_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_38"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_49"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_35"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_44"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_43"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_38"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_47"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_69"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_60"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_not_1_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_or_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_0_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_0_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_72"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_1_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_56"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_or_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_2_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_67"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_or_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_61"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_68"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_70"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_73"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_not_0_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_2_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_65"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_0_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_66"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_59"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_35"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_0_71"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_and_0_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="counter_4_util_vector_logic_2_32"/>
+</GenRun>

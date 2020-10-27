@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"room_man_test_func_synth.v" \
+"../../../../../room.srcs/sources_1/new/room_man_test.v" \
+
+# Do not sort compile order
+nosort

@@ -1,6 +1,6 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3301abe1ce94ca0958ece6be9b2defa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3301abe1ce94ca0958ece6be9b2defa --incr --debug typical --relax --mt 2 -L util_vector_logic_v2_0_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot room_man_test_behav xil_defaultlib.room_man_test xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -156,6 +156,7 @@ Compiling module xil_defaultlib.counter_4_or_1_0
 Compiling module util_vector_logic_v2_0_1.util_vector_logic_v2_0_1_util_ve...
 Compiling module xil_defaultlib.counter_4_util_vector_logic_0_71
 Compiling module xil_defaultlib.counter_4
-Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.room_man(open_time=20)
+Compiling module xil_defaultlib.room_man_test
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot testbench_behav
+Built simulation snapshot room_man_test_behav

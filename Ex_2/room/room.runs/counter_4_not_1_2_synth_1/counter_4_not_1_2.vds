@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 27 08:53:07 2020
+# Process ID: 1112
+# Current directory: C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/counter_4_not_1_2_synth_1
+# Command line: vivado.exe -log counter_4_not_1_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter_4_not_1_2.tcl
+# Log file: C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/counter_4_not_1_2_synth_1/counter_4_not_1_2.vds
+# Journal file: C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/counter_4_not_1_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source counter_4_not_1_2.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP counter_4_not_1_2, cache-ID = e033966c0dcb66a1.
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 27 08:53:16 2020...
