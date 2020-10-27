@@ -156,7 +156,7 @@ Compiling module xil_defaultlib.counter_4_or_1_0
 Compiling module util_vector_logic_v2_0_1.util_vector_logic_v2_0_1_util_ve...
 Compiling module xil_defaultlib.counter_4_util_vector_logic_0_71
 Compiling module xil_defaultlib.counter_4
-Compiling module xil_defaultlib.room_man(open_time=20)
+Compiling module xil_defaultlib.room_man(open_time=20,init_time=...
 Compiling module xil_defaultlib.room_man_test
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot room_man_test_behav

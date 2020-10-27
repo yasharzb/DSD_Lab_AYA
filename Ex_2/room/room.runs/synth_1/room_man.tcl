@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,7 +29,11 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/new/room_man.v
+read_verilog -library xil_defaultlib {
+  C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/new/room_man.v
+  C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/new/room_man_test.v
+  C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/new/testbench.v
+}
 add_files C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/counter_4.bd
 set_property used_in_implementation false [get_files -all C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/counter_4_ooc.xdc]
 

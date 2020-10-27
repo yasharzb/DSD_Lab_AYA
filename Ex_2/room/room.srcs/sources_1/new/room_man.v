@@ -25,26 +25,29 @@ module room_man(
     input in,
     input out,
     input ent,
+    input clr,
     output reg open,
     output close,
     output[3:0] q
     );
-    reg clr;
     wire en;
     wire u;
     parameter open_time = 10;
+    parameter init_time = 1;
+    integer init_time_elapsed = 0;
     counter_4 c4(.clear_bar(clr), .U(u), .clock(clk), .Enable(en), .Q0(q[0]), .Q1(q[1]), .Q2(q[2]), .Q3(q[3]));
     
     assign en = in ^ out;
     assign u = in;
     assign close = q[3] | q[2] | q[1] | q[0];
     
-    initial begin
-        clr <= 0;
-        clr <= #0.1 1;
-    end
+    initial
+        #init_time init_time_elapsed = 1;
+    
     always @(ent) begin
-        open <= ~(q[3] & q[2] & q[1] & q[0]) & ent;
-        #open_time open <= 0;
+        if (init_time_elapsed == 1) begin
+            open <= ~(q[3] & q[2] & q[1] & q[0]) & ent;
+            #open_time open <= 0;
+        end        
     end
 endmodule

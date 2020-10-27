@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Oct 27 09:32:53 2020
-# Process ID: 9176
+# Start of session at: Tue Oct 27 11:22:57 2020
+# Process ID: 9260
 # Current directory: C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1
 # Command line: vivado.exe -log room_man.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source room_man.tcl
 # Log file: C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/room_man.vds

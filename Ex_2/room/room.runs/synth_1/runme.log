@@ -18,219 +18,220 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2172 
+INFO: Helper process launched with PID 2564 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 814.820 ; gain = 178.621
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 815.676 ; gain = 179.102
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'room_man' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/new/room_man.v:23]
 	Parameter open_time bound to: 10 - type: integer 
+	Parameter init_time bound to: 1 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'counter_4' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:513]
 INFO: [Synth 8-6157] synthesizing module 'JK_FF_0_imp_WEXMUM' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:296]
 INFO: [Synth 8-6157] synthesizing module 'DFF_imp_BPGZSY' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:154]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_0_imp_1TLDCL5' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:683]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_33' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_33_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_33' (1#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_33_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_30' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_30_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_30' (2#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_30_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_33' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_33_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_33' (1#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_33_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_30' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_30_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_30' (2#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_30_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_0_imp_1TLDCL5' (3#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:683]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_1_imp_10ETVR' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:758]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_34' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_34_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_34' (4#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_34_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_31' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_31_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_31' (5#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_31_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_34' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_34_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_34' (4#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_34_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_31' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_31_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_31' (5#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_31_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_1_imp_10ETVR' (6#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:758]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_2_imp_1SJ3MX0' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:908]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_35' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_35_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_35' (7#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_35_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_32' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_32_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_32' (8#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_32_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_35' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_35_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_35' (7#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_35_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_32' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_32' (8#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_32_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_2_imp_1SJ3MX0' (9#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:908]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_3_imp_212RY2' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1008]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_36' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_36_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_36' (10#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_36_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_33' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_33_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_33' (11#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_33_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_36' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_36_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_36' (10#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_36_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_33' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_33_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_33' (11#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_33_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_3_imp_212RY2' (12#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1008]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_4_imp_1ROX1FN' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1083]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_37' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_37_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_37' (13#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_37_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_34' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_34_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_34' (14#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_34_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_37' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_37_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_37' (13#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_37_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_34' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_34_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_34' (14#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_34_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_4_imp_1ROX1FN' (15#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1083]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_5_imp_2UYB3X' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1208]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_38' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_38_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_38' (16#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_38_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_35' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_35_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_35' (17#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_35_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_38' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_38_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_38' (16#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_38_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_35' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_35_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_35' (17#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_35_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_5_imp_2UYB3X' (18#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1208]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_6_imp_1QK6U2M' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1283]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_39' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_39_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_39' (19#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_39_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_36' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_36_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_36' (20#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_36_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_39' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_39_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_39' (19#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_39_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_36' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_36_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_36' (20#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_36_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_6_imp_1QK6U2M' (21#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1283]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_7_imp_435COW' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1408]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_40' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_40_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_40' (22#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_40_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_37' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_37_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_37' (23#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_37_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_40' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_40_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_40' (22#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_40_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_37' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_37_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_37' (23#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_37_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_7_imp_435COW' (24#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1408]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_not_0_1' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_not_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_not_0_1' (25#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_not_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_not_1_1' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_not_1_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_not_1_1' (26#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_not_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_not_0_1' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_not_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_not_0_1' (25#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_not_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_not_1_1' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_not_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_not_1_1' (26#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_not_1_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'DFF_imp_BPGZSY' (27#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:154]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_41' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_41_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_41' (28#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_41_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_and_0_0' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_and_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_and_0_0' (29#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_and_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_42' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_42_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_42' (30#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_42_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_43' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_43_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_43' (31#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_43_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_41' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_41_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_41' (28#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_41_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_and_0_0' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_and_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_and_0_0' (29#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_and_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_42' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_42_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_42' (30#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_42_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_43' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_43_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_43' (31#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_43_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'JK_FF_0_imp_WEXMUM' (32#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:296]
 INFO: [Synth 8-6157] synthesizing module 'JK_FF_1_imp_170XEQ8' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:350]
 INFO: [Synth 8-6157] synthesizing module 'DFF_imp_1EUD4QC' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:12]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_0_imp_X1GRAL' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:733]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_44' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_44_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_44' (33#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_44_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_38' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_38_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_38' (34#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_38_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_44' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_44_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_44' (33#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_44_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_38' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_38_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_38' (34#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_38_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_0_imp_X1GRAL' (35#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:733]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_1_imp_16EO2DV' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:783]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_45' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_45_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_45' (36#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_45_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_39' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_39_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_39' (37#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_39_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_45' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_45_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_45' (36#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_45_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_39' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_39_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_39' (37#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_39_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_1_imp_16EO2DV' (38#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:783]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_2_imp_W5HWCW' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:933]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_46' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_46_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_46' (39#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_46_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_40' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_40_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_40' (40#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_40_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_46' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_46_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_46' (39#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_46_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_40' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_40_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_40' (40#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_40_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_2_imp_W5HWCW' (41#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:933]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_3_imp_17BLV72' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:958]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_47' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_47_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_47' (42#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_47_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_41' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_41_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_41' (43#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_41_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_47' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_47_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_47' (42#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_47_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_41' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_41_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_41' (43#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_41_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_3_imp_17BLV72' (44#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:958]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_4_imp_Z8J4UV' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1133]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_48' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_48_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_48' (45#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_48_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_42' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_42_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_42' (46#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_42_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_48' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_48_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_48' (45#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_48_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_42' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_42_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_42' (46#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_42_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_4_imp_Z8J4UV' (47#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1133]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_5_imp_14ARGX5' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1158]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_49' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_49_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_49' (48#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_49_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_43' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_43_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_43' (49#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_43_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_49' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_49_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_49' (48#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_49_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_43' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_43_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_43' (49#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_43_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_5_imp_14ARGX5' (50#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1158]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_6_imp_XV1KYY' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1333]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_50' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_50_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_50' (51#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_50_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_44' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_44_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_44' (52#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_44_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_50' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_50_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_50' (51#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_50_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_44' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_44_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_44' (52#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_44_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_6_imp_XV1KYY' (53#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1333]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_7_imp_15K5CUS' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1358]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_51' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_51_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_51' (54#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_51_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_45' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_45_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_45' (55#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_45_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_51' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_51_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_51' (54#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_51_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_45' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_45_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_45' (55#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_45_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_7_imp_15K5CUS' (56#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1358]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_not_0_2' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_not_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_not_0_2' (57#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_not_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_not_1_2' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_not_1_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_not_1_2' (58#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_not_1_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_not_0_2' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_not_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_not_0_2' (57#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_not_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_not_1_2' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_not_1_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_not_1_2' (58#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_not_1_2_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'DFF_imp_1EUD4QC' (59#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:12]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_and_0_1' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_and_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_and_0_1' (60#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_and_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_and_1_0' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_and_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_and_1_0' (61#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_and_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_or_0_0' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_or_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_or_0_0' (62#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_or_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_52' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_52_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_52' (63#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_52_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_and_0_1' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_and_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_and_0_1' (60#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_and_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_and_1_0' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_and_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_and_1_0' (61#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_and_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_or_0_0' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_or_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_or_0_0' (62#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_or_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_52' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_52_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_52' (63#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_52_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'JK_FF_1_imp_170XEQ8' (64#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:350]
 INFO: [Synth 8-6157] synthesizing module 'JK_FF_2_imp_V497TF' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:404]
 INFO: [Synth 8-6157] synthesizing module 'DFF_imp_1KFF5YN' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:83]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_0_imp_JEVIO' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:708]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_53' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_53_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_53' (65#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_53_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_46' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_46_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_46' (66#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_46_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_53' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_53_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_53' (65#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_53_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_46' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_46_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_46' (66#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_46_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_0_imp_JEVIO' (67#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:708]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_1_imp_1U3C8J2' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:808]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_54' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_54_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_54' (68#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_54_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_47' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_47_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_47' (69#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_47_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_54' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_54_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_54' (68#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_54_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_47' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_47_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_47' (69#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_47_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_1_imp_1U3C8J2' (70#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:808]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_2_imp_1E42ZX' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:883]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_55' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_55_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_55' (71#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_55_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_48' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_48_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_48' (72#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_48_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_55' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_55_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_55' (71#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_55_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_48' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_48_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_48' (72#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_48_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_2_imp_1E42ZX' (73#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:883]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_3_imp_1T53DOZ' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:983]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_56' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_56_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_56' (74#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_56_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_49' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_49_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_49' (75#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_49_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_56' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_56_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_56' (74#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_56_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_49' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_49_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_49' (75#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_49_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_3_imp_1T53DOZ' (76#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:983]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_4_imp_28XI7E' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1108]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_57' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_57_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_57' (77#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_57_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_50' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_50_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_50' (78#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_50_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_57' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_57_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_57' (77#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_57_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_50' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_50_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_50' (78#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_50_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_4_imp_28XI7E' (79#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1108]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_5_imp_1SBTYZ8' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1183]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_58' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_58_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_58' (80#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_58_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_51' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_51_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_51' (81#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_51_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_58' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_58_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_58' (80#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_58_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_51' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_51_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_51' (81#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_51_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_5_imp_1SBTYZ8' (82#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1183]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_6_imp_3L87RR' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1308]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_59' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_59_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_59' (83#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_59_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_52' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_52_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_52' (84#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_52_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_59' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_59_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_59' (83#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_59_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_52' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_52_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_52' (84#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_52_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_6_imp_3L87RR' (85#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1308]
 INFO: [Synth 8-6157] synthesizing module 'nand_3_7_imp_1R17U5L' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1383]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_60' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_60_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_60' (86#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_60_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_53' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_53_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_53' (87#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_53_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_60' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_60_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_60' (86#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_60_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_2_53' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_53_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_53' (87#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_53_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_7_imp_1R17U5L' (88#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:1383]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_not_0_3' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_not_0_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_not_0_3' (89#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_not_0_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_not_1_3' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_not_1_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_not_1_3' (90#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_not_1_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_not_0_3' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_not_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_not_0_3' (89#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_not_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_not_1_3' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_not_1_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_not_1_3' (90#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_not_1_3_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'DFF_imp_1KFF5YN' (91#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:83]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_and_0_2' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_and_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_and_0_2' (92#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_and_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_and_1_1' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_and_1_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_and_1_1' (93#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_and_1_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_or_0_1' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_or_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_or_0_1' (94#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_or_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_61' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_61_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_61' (95#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_61_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_and_0_2' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_and_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_and_0_2' (92#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_and_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_and_1_1' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_and_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_and_1_1' (93#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_and_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_or_0_1' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_or_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_or_0_1' (94#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_or_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter_4_util_vector_logic_0_61' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_61_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_61' (95#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_61_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'JK_FF_2_imp_V497TF' (96#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:404]
 INFO: [Synth 8-6157] synthesizing module 'JK_FF_3_imp_18D4FL9' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:458]
 INFO: [Synth 8-6157] synthesizing module 'DFF_imp_NY6U1L' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:225]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_62' (97#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_62_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_54' (98#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_54_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_62' (97#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_62_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_2_54' (98#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_2_54_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'nand_3_0_imp_16VCLVO' (99#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:658]
-INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_63' (100#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9176-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_63_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_4_util_vector_logic_0_63' (100#1) [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/.Xil/Vivado-9260-LAPTOP-B8FRIN8D/realtime/counter_4_util_vector_logic_0_63_stub.v:6]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-7023] instance 'JK_FF_3' of module 'JK_FF_3_imp_18D4FL9' has 6 connections declared, but only 5 given [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/bd/counter_4/synth/counter_4.v:588]
-WARNING: [Synth 8-567] referenced signal 'q' should be on the sensitivity list [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/new/room_man.v:43]
-WARNING: [Synth 8-3917] design room_man has port open driven by constant 0
+WARNING: [Synth 8-567] referenced signal 'init_time_elapsed' should be on the sensitivity list [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/new/room_man.v:47]
+WARNING: [Synth 8-567] referenced signal 'q' should be on the sensitivity list [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/new/room_man.v:47]
 WARNING: [Synth 8-3331] design room_man has unconnected port ent
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 880.348 ; gain = 244.148
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 880.977 ; gain = 244.402
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -243,10 +244,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 880.348 ; gain = 244.148
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 880.977 ; gain = 244.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 880.348 ; gain = 244.148
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 880.977 ; gain = 244.402
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -464,20 +465,20 @@ Parsing XDC File [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.
 Finished Parsing XDC File [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 991.758 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1005.770 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 991.758 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1005.770 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -588,10 +589,11 @@ Applied set_property DONT_TOUCH = true for c4/and_7. (constraint file  auto gene
 Applied set_property DONT_TOUCH = true for c4/and_8. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for c4/and_9. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'open_reg' [C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.srcs/sources_1/new/room_man.v:49]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -632,10 +634,9 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3917] design room_man has port open driven by constant 0
 WARNING: [Synth 8-3331] design room_man has unconnected port ent
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -647,13 +648,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -665,7 +666,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -689,7 +690,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -702,7 +703,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -714,25 +715,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -958,15 +959,15 @@ Report Cell Usage:
 |104   |counter_4_util_vector_logic_2_61 |     1|
 |105   |LUT2                             |     1|
 |106   |LUT4                             |     1|
-|107   |IBUF                             |     3|
-|108   |OBUF                             |     2|
+|107   |IBUF                             |     4|
+|108   |OBUF                             |     6|
 +------+---------------------------------+------+
 
 Report Instance Areas: 
 +------+-----------------+---------------------+------+
 |      |Instance         |Module               |Cells |
 +------+-----------------+---------------------+------+
-|1     |top              |                     |   111|
+|1     |top              |                     |   116|
 |2     |  c4             |counter_4            |   104|
 |3     |    JK_FF_0      |JK_FF_0_imp_WEXMUM   |    22|
 |4     |      DFF        |DFF_imp_BPGZSY       |    18|
@@ -1010,25 +1011,25 @@ Report Instance Areas:
 |42    |        nand_3_7 |nand_3_7_imp_XEBZR1  |     2|
 +------+-----------------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 991.758 ; gain = 355.559
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.770 ; gain = 369.195
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 991.758 ; gain = 244.148
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 991.758 ; gain = 355.559
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1005.770 ; gain = 244.402
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.770 ; gain = 369.195
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1006.414 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1009.121 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 214 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1006.414 ; gain = 620.633
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1006.414 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1009.121 ; gain = 621.898
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1009.121 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Yasharzb/Documents/GitHub/DSD_Lab_AYA/Ex_2/room/room.runs/synth_1/room_man.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file room_man_utilization_synth.rpt -pb room_man_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 27 09:33:54 2020...
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 27 11:23:45 2020...
